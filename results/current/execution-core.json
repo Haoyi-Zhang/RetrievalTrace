@@ -1,0 +1,63 @@
+[
+  {
+    "task": "tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.6313961319999635,
+    "child_cpu_seconds": 0.628338,
+    "cumulative_child_peak_rss_kib": 93612
+  },
+  {
+    "task": "optimized-tests",
+    "command": [
+      "python",
+      "-O",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 1.9525884820000101,
+    "child_cpu_seconds": 1.950191,
+    "cumulative_child_peak_rss_kib": 100760
+  },
+  {
+    "task": "examples",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "examples",
+      "--out",
+      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.5680655699998169,
+    "child_cpu_seconds": 0.5657979999999999,
+    "cumulative_child_peak_rss_kib": 100760
+  },
+  {
+    "task": "supports",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "supports",
+      "--out",
+      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.8078916320000644,
+    "child_cpu_seconds": 0.8057429999999997,
+    "cumulative_child_peak_rss_kib": 100760
+  }
+]

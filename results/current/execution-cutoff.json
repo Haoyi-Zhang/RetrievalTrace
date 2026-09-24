@@ -1,0 +1,30 @@
+[
+  {
+    "task": "cutoff",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "cutoff",
+      "--out",
+      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 23.777916205999986,
+    "child_cpu_seconds": 23.771565,
+    "cumulative_child_peak_rss_kib": 114292
+  },
+  {
+    "task": "larger",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "larger",
+      "--out",
+      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 1.8993162409999513,
+    "child_cpu_seconds": 1.8957809999999988,
+    "cumulative_child_peak_rss_kib": 114292
+  }
+]

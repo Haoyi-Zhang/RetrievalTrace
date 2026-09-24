@@ -1,0 +1,30 @@
+{
+  "cutoff": 1,
+  "horizon": 10,
+  "mode": "collapse",
+  "status": "invalid",
+  "witness": {
+    "action": "failure",
+    "evidence": 1,
+    "feedback": [
+      1,
+      1
+    ],
+    "first": 0,
+    "retrieval": [
+      0,
+      1
+    ],
+    "runs": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "second": 1
+  }
+}

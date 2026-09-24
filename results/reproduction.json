@@ -1,0 +1,181 @@
+{
+  "status": "passed",
+  "scope": "Cleanly extracted standalone repository and separate clean project paper source; deterministic source-backed outputs compared with retained reference evidence.",
+  "documented_commands": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 0.6731164499997249,
+      "child_cpu_seconds": 0.6710989999999999,
+      "cumulative_child_peak_rss_kib": 94888
+    },
+    {
+      "command": "python -O -m unittest discover -s tests -v",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 1.9729018869998072,
+      "child_cpu_seconds": 1.972097,
+      "cumulative_child_peak_rss_kib": 100764
+    },
+    {
+      "command": "python check.py retry inputs/examples/ordered.json --cutoff 1 --output scratch/ordered.json",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 0.5453542919999563,
+      "child_cpu_seconds": 0.5446250000000004,
+      "cumulative_child_peak_rss_kib": 100764
+    },
+    {
+      "command": "python check.py retry inputs/examples/ordered.json --cutoff 1 --certificate scratch/ordered.json",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 0.672547193000355,
+      "child_cpu_seconds": 0.6715189999999996,
+      "cumulative_child_peak_rss_kib": 100764
+    },
+    {
+      "command": "python check.py retry inputs/examples/distance.json --cutoff 2 --output scratch/distance.json",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 0.5521977650000736,
+      "child_cpu_seconds": 0.5512170000000003,
+      "cumulative_child_peak_rss_kib": 100764
+    },
+    {
+      "command": "python check.py retry inputs/examples/distance.json --cutoff 2 --certificate scratch/distance.json",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 0.6329093550002654,
+      "child_cpu_seconds": 0.6320120000000005,
+      "cumulative_child_peak_rss_kib": 100764
+    },
+    {
+      "command": "python check.py retry inputs/examples/sharp.json --cutoff 2 --output scratch/sharp.json",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 0.6129485399997066,
+      "child_cpu_seconds": 0.6111230000000004,
+      "cumulative_child_peak_rss_kib": 100764
+    },
+    {
+      "command": "python check.py retry inputs/examples/sharp.json --cutoff 2 --certificate scratch/sharp.json",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 0.5941910120000102,
+      "child_cpu_seconds": 0.5895649999999997,
+      "cumulative_child_peak_rss_kib": 100764
+    },
+    {
+      "command": "python check.py graph inputs/examples/graph.json --output scratch/graph.json",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 0.5913752550000027,
+      "child_cpu_seconds": 0.5903489999999999,
+      "cumulative_child_peak_rss_kib": 100764
+    },
+    {
+      "command": "python check.py graph inputs/examples/graph.json --certificate scratch/graph.json",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 0.6162148670000533,
+      "child_cpu_seconds": 0.6143200000000003,
+      "cumulative_child_peak_rss_kib": 100764
+    },
+    {
+      "command": "python check.py least inputs/examples/distance.json --output scratch/least.json",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 0.6477846150000914,
+      "child_cpu_seconds": 0.646762,
+      "cumulative_child_peak_rss_kib": 100764
+    },
+    {
+      "command": "python check.py least inputs/examples/distance.json --certificate scratch/least.json",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 0.5790724219996264,
+      "child_cpu_seconds": 0.5781640000000013,
+      "cumulative_child_peak_rss_kib": 100764
+    },
+    {
+      "command": "python audit.py",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 1.0351188229997206,
+      "child_cpu_seconds": 1.0342320000000003,
+      "cumulative_child_peak_rss_kib": 136852
+    },
+    {
+      "command": "python reproduce.py --group all --out scratch/reproduction",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 54.88858882600016,
+      "child_cpu_seconds": 55.113354,
+      "cumulative_child_peak_rss_kib": 114300
+    },
+    {
+      "command": "python reproduce.py --group core --out scratch/reproduction",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 4.686300161000418,
+      "child_cpu_seconds": 5.087193,
+      "cumulative_child_peak_rss_kib": 100720
+    },
+    {
+      "command": "python reproduce.py --group relational --out scratch/reproduction",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 18.14746975900016,
+      "child_cpu_seconds": 18.470476,
+      "cumulative_child_peak_rss_kib": 100720
+    },
+    {
+      "command": "python reproduce.py --group cutoff --out scratch/reproduction",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 25.758086652000202,
+      "child_cpu_seconds": 26.169580999999997,
+      "cumulative_child_peak_rss_kib": 114572
+    },
+    {
+      "command": "python reproduce.py --group graphs --out scratch/reproduction",
+      "working_directory": "standalone-repository",
+      "exit_code": 0,
+      "wall_seconds": 6.168600140000308,
+      "child_cpu_seconds": 6.578479000000001,
+      "cumulative_child_peak_rss_kib": 113680
+    },
+    {
+      "command": "python build.py",
+      "working_directory": "paper",
+      "exit_code": 0,
+      "wall_seconds": 8.818391867000173,
+      "child_cpu_seconds": 9.270449,
+      "cumulative_child_peak_rss_kib": 116512
+    }
+  ],
+  "documented_command_count": 19,
+  "documented_commands_successful": 19,
+  "successful_documented_commands_cpu_seconds": 130.396616,
+  "maximum_recorded_child_rss_kib": 136852,
+  "one_complete_campaign": {
+    "completed_commands": 12,
+    "all_recorded_commands_successful": true,
+    "child_cpu_seconds": 54.056072,
+    "cumulative_child_peak_rss_kib": 114300
+  },
+  "comparison": {
+    "semantic_json": "equal after excluding measurement fields",
+    "raw_csv_cases_certificates": "byte-for-byte equal",
+    "paper_pages": 50,
+    "paper_text_and_rendered_pages": "identical between development and clean build",
+    "publisher_class_and_bibliography_style": "byte-for-byte equal to supplied template",
+    "figure_data": "byte-for-byte equal to retained encoding-scaling.csv"
+  },
+  "interrupted_attempts": {
+    "count": 2,
+    "description": "Two synchronous full-group invocations were interrupted by the tool-call wall limit before completion; neither is counted as a successful campaign. The completed full invocation and all four separate documented groups were then checked. Per-attempt CPU totals for the interrupted invocations are not asserted."
+  },
+  "interpretation": "Alternative groups and repeated tests are reproduction, not independent workload coverage. Timing/RSS vary; successful execution does not mechanize the written general proofs."
+}

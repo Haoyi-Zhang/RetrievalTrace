@@ -1,0 +1,17 @@
+{
+  "cached_program_world_executions": 1818,
+  "invalid": 40122,
+  "maximum_certificate_bytes": 843,
+  "measurement": {
+    "cpu_seconds": 4.211969022,
+    "peak_rss_kib": 99748,
+    "wall_seconds": 4.210471248999966
+  },
+  "minimum_certificate_bytes": 69,
+  "mismatches": [],
+  "ordered_pairs": 40804,
+  "programs": 202,
+  "replayed": 40804,
+  "valid": 682,
+  "worlds_per_program": 9
+}

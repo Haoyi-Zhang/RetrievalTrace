@@ -1,0 +1,132 @@
+{
+  "scope": "Finite static shared-world relational semantics; generated validation only",
+  "two_bit_grid": {
+    "bits": 2,
+    "initial_masks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "outcome_atoms": "success/failure f times additions 0..3",
+    "signatures": "all 255 nonempty subsets of eight atoms",
+    "feedback_tables": "all 81 tables over entries 1,2,3",
+    "horizons": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "contracts": 82620,
+    "costs": "Fixed basis vectors [1,0] and [0,1]; zero-cost cases are separate unit tests"
+  },
+  "cutoff": {
+    "cutoffs": [
+      1,
+      2,
+      3
+    ],
+    "adjacent_and_larger_horizons": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "hypotheses": [
+      "adjacent equivalence",
+      "deterministic feedback and K+1 retrieval outcomes suffice for rejection",
+      "rank bound",
+      "distance exactness"
+    ],
+    "negative_controls": [
+      "hidden exhaustion evidence",
+      "forged parent",
+      "missing world",
+      "negative costs",
+      "wrong binding"
+    ]
+  },
+  "support": {
+    "keys": 2,
+    "outcomes_per_key": 2,
+    "supports": 16,
+    "candidate_families": 65536,
+    "direct_comparisons": 1048576,
+    "actual_cover_checks": 4128,
+    "selection": "258 evenly spaced families per support: range(0,65536,255), including both endpoints; exact generator authoritative"
+  },
+  "graphs": {
+    "grammar": "all call-depth-at-most-two trees with two binary keys and two return labels",
+    "programs": 202,
+    "ordered_pairs": 40804,
+    "worlds": 9
+  },
+  "larger": [
+    {
+      "family": "boolean",
+      "seed": 271828,
+      "cases": 384
+    },
+    {
+      "family": "relational",
+      "seed": 271829,
+      "cases": 192
+    },
+    {
+      "family": "cutoff",
+      "seed": 271830,
+      "cases": 240
+    }
+  ],
+  "larger_selection": "Exact included generator; fixed before execution; not held-out real applications. All selected cases and worlds retained.",
+  "scaling": {
+    "explicit_horizons": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "binary_exponents": [
+      1,
+      2,
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      60
+    ],
+    "distance_horizon": "max(3,2**exponent)",
+    "methods": [
+      "explicit graph census",
+      "collapse",
+      "distance"
+    ],
+    "interpretation": "representation size, not execution speed"
+  },
+  "resources": {
+    "workers": 1,
+    "address_space_limit_mib": 3500,
+    "child_cpu_seconds": 2700,
+    "child_wall_seconds": 2700,
+    "campaign_cpu_ceiling_seconds": 28800,
+    "repair_reserve_fraction": 0.25,
+    "max_paths_per_program": 100000,
+    "max_cover_nodes_per_challenge": 200000,
+    "max_worlds": 200000,
+    "max_distance_cells": 2000000
+  },
+  "failure_policy": "Mismatch stops comparison; malformed is not invalid; UNKNOWN has no semantic conclusion; no favorable-result filtering.",
+  "generator": "experiments/campaign.py"
+}

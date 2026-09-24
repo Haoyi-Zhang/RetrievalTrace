@@ -1,0 +1,42 @@
+{
+  "cutoff": 2,
+  "horizon": 10,
+  "kind": "least-cutoff",
+  "lower": {
+    "cutoff": 1,
+    "horizon": 10,
+    "mode": "collapse",
+    "status": "invalid",
+    "witness": {
+      "action": "failure",
+      "evidence": 1,
+      "feedback": [
+        1,
+        1
+      ],
+      "first": 0,
+      "retrieval": [
+        0,
+        1
+      ],
+      "runs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "second": 1
+    }
+  },
+  "upper": {
+    "cutoff": 2,
+    "horizon": 10,
+    "mode": "rank",
+    "rank": 2,
+    "status": "valid"
+  }
+}

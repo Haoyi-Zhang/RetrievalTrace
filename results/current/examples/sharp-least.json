@@ -1,0 +1,44 @@
+{
+  "cutoff": 3,
+  "horizon": 10,
+  "kind": "least-cutoff",
+  "lower": {
+    "cutoff": 2,
+    "horizon": 10,
+    "mode": "distance",
+    "status": "invalid",
+    "witness": {
+      "feedback": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "packet": [
+        "exhausted",
+        7
+      ],
+      "path": [
+        0,
+        1,
+        2
+      ],
+      "retrieval": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  "upper": {
+    "cutoff": 3,
+    "horizon": 10,
+    "mode": "rank",
+    "rank": 3,
+    "status": "valid"
+  }
+}

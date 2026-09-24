@@ -1,0 +1,40 @@
+{
+  "bits": 3,
+  "initial": 0,
+  "horizon": 1152921504606846976,
+  "outcomes": [
+    {
+      "id": "o0",
+      "failure": null,
+      "add": 3
+    },
+    {
+      "id": "o1",
+      "failure": null,
+      "add": 5
+    },
+    {
+      "id": "o2",
+      "failure": null,
+      "add": 6
+    }
+  ],
+  "feedback": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "query_cost": [
+    1,
+    0
+  ],
+  "feedback_cost": [
+    0,
+    1
+  ]
+}

@@ -1,0 +1,1 @@
+{"candidate_families": 65536, "challenged_supports": 16, "comparisons": 1048576, "cover_search_checks": 4128, "measurement": {"cpu_seconds": 0.18792784799999995, "peak_rss_kib": 96684, "wall_seconds": 0.18597410100005618}, "mismatches": [], "task": "supports", "valid_covers": 989343}

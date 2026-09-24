@@ -1,0 +1,77 @@
+{
+  "resources": [
+    "query",
+    "feedback"
+  ],
+  "tokens": [
+    "origin-a",
+    "origin-b"
+  ],
+  "initial": 0,
+  "labels": [
+    "ok",
+    "fail"
+  ],
+  "modules": [
+    {
+      "key": "fetch",
+      "requires": 0,
+      "adds": [
+        1,
+        3
+      ],
+      "cost": [
+        1,
+        0
+      ]
+    }
+  ],
+  "source": [
+    {
+      "kind": "call",
+      "key": 0,
+      "next": [
+        1,
+        1
+      ]
+    },
+    {
+      "kind": "call",
+      "key": 0,
+      "next": [
+        2,
+        3
+      ]
+    },
+    {
+      "kind": "stop",
+      "label": "ok",
+      "returned": 1
+    },
+    {
+      "kind": "stop",
+      "label": "ok",
+      "returned": 3
+    }
+  ],
+  "target": [
+    {
+      "kind": "call",
+      "key": 0,
+      "next": [
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "stop",
+      "label": "ok",
+      "returned": 1
+    },
+    {
+      "kind": "stop",
+      "label": "ok",
+      "returned": 3
+    }
+  ]
+}

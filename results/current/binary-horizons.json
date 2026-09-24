@@ -1,0 +1,102 @@
+[
+  {
+    "collapse_bytes": 59,
+    "distance_bytes": 1122,
+    "distance_horizon": 3,
+    "horizon": 2,
+    "worst": [
+      2,
+      2
+    ]
+  },
+  {
+    "collapse_bytes": 59,
+    "distance_bytes": 1122,
+    "distance_horizon": 4,
+    "horizon": 4,
+    "worst": [
+      4,
+      4
+    ]
+  },
+  {
+    "collapse_bytes": 60,
+    "distance_bytes": 1123,
+    "distance_horizon": 16,
+    "horizon": 16,
+    "worst": [
+      16,
+      16
+    ]
+  },
+  {
+    "collapse_bytes": 61,
+    "distance_bytes": 1124,
+    "distance_horizon": 256,
+    "horizon": 256,
+    "worst": [
+      256,
+      256
+    ]
+  },
+  {
+    "collapse_bytes": 62,
+    "distance_bytes": 1125,
+    "distance_horizon": 4096,
+    "horizon": 4096,
+    "worst": [
+      4096,
+      4096
+    ]
+  },
+  {
+    "collapse_bytes": 63,
+    "distance_bytes": 1126,
+    "distance_horizon": 65536,
+    "horizon": 65536,
+    "worst": [
+      65536,
+      65536
+    ]
+  },
+  {
+    "collapse_bytes": 66,
+    "distance_bytes": 1129,
+    "distance_horizon": 16777216,
+    "horizon": 16777216,
+    "worst": [
+      16777216,
+      16777216
+    ]
+  },
+  {
+    "collapse_bytes": 68,
+    "distance_bytes": 1131,
+    "distance_horizon": 4294967296,
+    "horizon": 4294967296,
+    "worst": [
+      4294967296,
+      4294967296
+    ]
+  },
+  {
+    "collapse_bytes": 73,
+    "distance_bytes": 1136,
+    "distance_horizon": 281474976710656,
+    "horizon": 281474976710656,
+    "worst": [
+      281474976710656,
+      281474976710656
+    ]
+  },
+  {
+    "collapse_bytes": 77,
+    "distance_bytes": 1140,
+    "distance_horizon": 1152921504606846976,
+    "horizon": 1152921504606846976,
+    "worst": [
+      1152921504606846976,
+      1152921504606846976
+    ]
+  }
+]

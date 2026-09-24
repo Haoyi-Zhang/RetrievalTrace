@@ -1,0 +1,31 @@
+{
+  "bits": 2,
+  "initial": 0,
+  "horizon": 10,
+  "outcomes": [
+    {
+      "id": "o0",
+      "failure": null,
+      "add": 1
+    },
+    {
+      "id": "o1",
+      "failure": null,
+      "add": 3
+    }
+  ],
+  "feedback": [
+    3,
+    3,
+    3,
+    3
+  ],
+  "query_cost": [
+    1,
+    0
+  ],
+  "feedback_cost": [
+    0,
+    1
+  ]
+}
