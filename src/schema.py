@@ -13,6 +13,13 @@ class Invalid(ValueError):
 class Unknown(RuntimeError):
     """An explicit resource ceiling was reached; no semantic conclusion."""
 
+# These are semantic-adapter admission ceilings, shared with the graph schema so
+# a bounded expansion returns UNKNOWN before constructing a graph that the
+# declared target language would reject.
+GRAPH_MAX_MODULES = 32
+GRAPH_MAX_OUTCOMES = 32
+GRAPH_MAX_NODES = 1000
+
 def require(condition: bool, message: str) -> None:
     if not condition:
         raise Invalid(message)
@@ -82,7 +89,8 @@ def graph(x: Any) -> dict:
     require(type(labels) is list and labels and all(type(a) is str and a for a in labels)
             and len(set(labels)) == len(labels), 'distinct terminal labels required')
     modules = x.get('modules')
-    require(type(modules) is list and len(modules) <= 32, 'modules: at most 32 keys')
+    require(type(modules) is list and len(modules) <= GRAPH_MAX_MODULES,
+            f'modules: at most {GRAPH_MAX_MODULES} keys')
     mods, keys = [], set()
     for m in modules:
         require(type(m) is dict, 'module must be an object')
@@ -90,14 +98,16 @@ def graph(x: Any) -> dict:
         require(type(key) is str and key and key not in keys, 'distinct nominal module keys required')
         keys.add(key)
         adds = m.get('adds')
-        require(type(adds) is list and 0 < len(adds) <= 32, 'nonempty finite module outcomes required')
+        require(type(adds) is list and 0 < len(adds) <= GRAPH_MAX_OUTCOMES,
+                f'nonempty module outcomes: at most {GRAPH_MAX_OUTCOMES} required')
         mods.append(dict(key=key, requires=integer(m.get('requires', 0), 'requires', 0, full),
                          adds=[integer(v, 'addition', 0, full) for v in adds],
                          cost=vector(m.get('cost'), 'module cost', len(names))))
     out = dict(resources=names, tokens=tokens, initial=initial, labels=labels, modules=mods)
     for side in ('source','target'):
         nodes = x.get(side)
-        require(type(nodes) is list and 0 < len(nodes) <= 1000, 'program must have 1..1000 nodes')
+        require(type(nodes) is list and 0 < len(nodes) <= GRAPH_MAX_NODES,
+                f'program must have 1..{GRAPH_MAX_NODES} nodes')
         cleaned = []
         for i,node in enumerate(nodes):
             require(type(node) is dict, 'node must be an object')

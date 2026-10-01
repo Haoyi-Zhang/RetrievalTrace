@@ -4,9 +4,9 @@
   "collapse_comparisons": 330480,
   "contracts": 82620,
   "measurement": {
-    "cpu_seconds": 23.182848567,
-    "peak_rss_kib": 114292,
-    "wall_seconds": 23.18290342699993
+    "cpu_seconds": 23.173894123,
+    "peak_rss_kib": 114656,
+    "wall_seconds": 23.175962713000047
   },
   "mismatches": [],
   "rank_comparisons": 529740,

@@ -1,1 +1,1 @@
-{"contracts": 20655, "cost_packet_equivalence_checks": 206550, "initial": 0, "measurement": {"cpu_seconds": 5.638450571, "peak_rss_kib": 99372, "wall_seconds": 5.637800384000002}, "mismatches": [], "operational_executions": 103275, "task": "grid-0"}
+{"contracts": 20655, "cost_packet_equivalence_checks": 206550, "initial": 0, "measurement": {"cpu_seconds": 5.543181911, "peak_rss_kib": 100136, "wall_seconds": 5.5408687120000195}, "mismatches": [], "operational_executions": 103275, "task": "grid-0"}

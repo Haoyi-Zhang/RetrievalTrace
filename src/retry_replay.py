@@ -7,7 +7,7 @@ state sets. The consumer is not hardened for use as a hostile network service.
 from __future__ import annotations
 from itertools import combinations,product
 from math import comb
-from .schema import retry,require,integer,Unknown
+from .schema import retry,require,integer,Unknown,identical
 
 def _expected_worlds(c,K,max_worlds,max_cells):
     m=len(c['outcomes']); a=sum(v==3 for v in c['feedback'])
@@ -33,7 +33,12 @@ def _world(c,w,deterministic=True):
     return R,B
 
 def _row(c,row,R,B,K):
-    require(type(row) is dict and row.get('retrieval')==R and row.get('feedback')==B,
+    require(type(row) is dict,'distance row must be an object')
+    # Validate serialized world metadata before comparing it with the expected
+    # world.  Python aliases bool/int and int/float under ==, so ordinary list
+    # equality is not a safe certificate-binding check.
+    row_R,row_B=_world(c,{'retrieval':row.get('retrieval'),'feedback':row.get('feedback')})
+    require(identical(row_R,R) and identical(row_B,B),
             'missing, reordered, or wrong universal world')
     n=1<<c['bits']; d=row.get('distance'); parent=row.get('parents')
     require(type(d) is list and len(d)==n and type(parent) is list and len(parent)==n,'distance row dimensions')

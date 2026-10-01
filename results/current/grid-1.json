@@ -3,9 +3,9 @@
   "cost_packet_equivalence_checks": 206550,
   "initial": 1,
   "measurement": {
-    "cpu_seconds": 3.703064334,
-    "peak_rss_kib": 99240,
-    "wall_seconds": 3.707015503999969
+    "cpu_seconds": 3.845120916,
+    "peak_rss_kib": 100016,
+    "wall_seconds": 3.8502923689999875
   },
   "mismatches": [],
   "operational_executions": 103275

@@ -50,3 +50,24 @@ def graph_traces(c,side,world):
 def graph_refines(S,T):
     def match(s,t): return s[:3]==t[:3] and all(y<=x for x,y in zip(s[3],t[3]))
     return all(any(match(s,t) for s in S) for t in T) and all(any(match(s,t) for t in T) for s in S)
+
+
+def componentwise_attained_worst(packets):
+    """Return the operational coordinatewise maximum and whether one trace attains it."""
+    if not packets:
+        raise ValueError('at least one terminal packet is required')
+    width=len(next(iter(packets))[2])
+    worst=tuple(max(packet[2][i] for packet in packets) for i in range(width))
+    return worst,any(packet[2]==worst for packet in packets)
+
+def erase_exhaustion_evidence(packets):
+    """Project exhausted observations to their tag while preserving costs."""
+    return {(('exhausted',) if tag=='exhausted' else (tag,evidence),cost)
+            for tag,evidence,cost in packets}
+
+def projected_refines(source,target):
+    """Two-sided cost-compatible refinement for already projected observations."""
+    def match(s,t):
+        return s[0]==t[0] and all(b<=a for a,b in zip(s[1],t[1]))
+    return (all(any(match(s,t) for s in source) for t in target) and
+            all(any(match(s,t) for t in target) for s in source))

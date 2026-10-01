@@ -44,7 +44,7 @@ python check.py least inputs/examples/distance.json --certificate scratch/least.
 python audit.py
 ```
 
-There are 83 tests, passed in both interpreter modes. The ordered, distance and
+There are 100 tests, passed in both interpreter modes. The ordered, distance and
 graph examples report `valid`; the sharp example reports `invalid`. The least
 example reports `least-valid` and cutoff 2. Its bundle proves validity at 2 and
 invalidity at 1; the rank upper bound alone would be 3.
@@ -103,9 +103,12 @@ workloads. Full results distinguish direct executions from downward-closure
 comparisons and checks of already generated objects.
 
 `results/current/encoding-scaling.csv` compares serialized input and certificate
-sizes for horizons 1 through 12. `binary-horizons.json` checks compact cases up
-to 2**60 without unfolding the source. This is a representation comparison, not
-a lower bound for all proof systems. The specialized witness can still require
+sizes for horizons 1 through 12. `binary-horizons.json` records formula-derived
+compact cases up to 2**60 without unfolding the source. The separate
+`worst-cost-branches.json` enumerates terminal traces for all three branches of
+the exact worst-vector formula, and `observation-erasure.json` executes the
+three-atom exhaustion-projection boundary. This is a representation and finite
+semantic comparison, not a lower bound for all proof systems. The specialized witness can still require
 exponentially many worlds or evidence states.
 
 ## Input conventions
@@ -135,7 +138,11 @@ admission, and strings/cost dimensions are not a hardened network protocol.
 Use ordinary trusted local research inputs, not a public certificate service.
 The uncapped mathematical completeness claim does not imply completeness under
 these executable limits. Huge source horizons are handled only by retry modes;
-the explicit adapter is intentionally restricted to horizon at most 12.
+the explicit adapter is intentionally restricted to horizon at most 12. It also
+returns UNKNOWN before construction when the exact expansion would exceed the
+graph schema's 32 nominal modules, 32 outcomes for one module, or 1000 nodes per
+program; it never merges feedback keys or drops outcomes to fit those limits. A
+non-integer or Boolean target horizon is malformed rather than resource-limited.
 
 ## Source map and trusted boundary
 

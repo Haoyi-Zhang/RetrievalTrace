@@ -13,7 +13,8 @@ from src.retry_replay import verify as rv
 from src.graph_producer import produce as gp,census,cover,effects
 from src.graph_replay import verify as gv
 from src.adapter import expand
-from tests.oracle import retry_packets,retry_refines,all_retry_worlds,graph_traces,graph_refines
+from tests.oracle import (retry_packets,retry_refines,all_retry_worlds,graph_traces,graph_refines,
+                          componentwise_attained_worst,erase_exhaustion_evidence,projected_refines)
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 
@@ -22,6 +23,58 @@ def write_json(path,data):
     path.write_text(json.dumps(data,indent=2,sort_keys=True)+'\n',encoding='utf8')
 
 def size(cert):return len(json.dumps(cert,sort_keys=True,separators=(',',':')).encode('utf8'))
+
+
+
+def worst_cost_branch_check():
+    """Compare all three branches of Theorem 5.7 with terminal traces."""
+    q=[2,1,0]; b=[1,0,3]; H=4
+    specs=[
+        ('continuing-success',
+         dict(bits=0,initial=0,horizon=H,outcomes=[dict(id='s',failure=None,add=0)],
+              feedback=[1],query_cost=q,feedback_cost=b),[0],[1],
+         [H*(x+y) for x,y in zip(q,b)]),
+        ('immediate-success',
+         dict(bits=0,initial=0,horizon=H,
+              outcomes=[dict(id='s',failure=None,add=0),dict(id='f',failure='f',add=0)],
+              feedback=[2],query_cost=q,feedback_cost=b),[0,1],[2],
+         [x+y for x,y in zip(q,b)]),
+        ('all-failures',
+         dict(bits=0,initial=0,horizon=H,
+              outcomes=[dict(id='f0',failure='f0',add=0),dict(id='f1',failure='f1',add=0)],
+              feedback=[1],query_cost=q,feedback_cost=b),[0,1],[1],list(q)),
+    ]
+    cases=[];mismatches=[]
+    for branch,raw,R,B,expected in specs:
+        c=retry(raw);packets=retry_packets(c,R,B,H)
+        actual,attained=componentwise_attained_worst(packets)
+        terminal=[dict(label=tag,evidence=e,cost=list(cost)) for tag,e,cost in sorted(packets)]
+        record=dict(branch=branch,horizon=H,retrieval=R,feedback=B,
+                    expected_worst=expected,operational_worst=list(actual),
+                    jointly_attained=attained,terminal_traces=terminal)
+        if list(actual)!=expected or not attained:mismatches.append(branch)
+        cases.append(record)
+    return dict(cases=cases,mismatches=mismatches)
+
+def exhaustion_erasure_check():
+    """Execute the three-atom counterexample under projected exhaustion packets."""
+    raw=dict(bits=3,initial=0,horizon=3,
+             outcomes=[dict(id=f's{i}',failure=None,add=1<<i) for i in range(3)],
+             feedback=[1]*7+[2],query_cost=[1,0],feedback_cost=[0,1])
+    c=retry(raw);R=[0,1,2];B=[1]*7+[2]
+    exact={H:retry_packets(c,R,B,H) for H in (1,2,3)}
+    projected={H:erase_exhaustion_evidence(exact[H]) for H in exact}
+    def rows(values):
+        return [dict(observation=list(obs),cost=list(cost))
+                for obs,cost in sorted(values,key=lambda x:(x[0],x[1]))]
+    adjacent=projected_refines(projected[2],projected[1])
+    larger=projected_refines(projected[3],projected[1])
+    return dict(bits=3,source_horizons=[2,3],target_horizon=1,
+                adjacent_after_erasure=adjacent,larger_after_erasure=larger,
+                exact_adjacent=retry_refines(exact[2],exact[1]),
+                exact_larger=retry_refines(exact[3],exact[1]),
+                projected_packets={str(H):rows(projected[H]) for H in (1,2,3)},
+                mismatches=[] if adjacent and not larger else ['unexpected projected verdict'])
 
 def capsule(n,initial,signature,B,H=5):
     oo=[]
@@ -222,9 +275,13 @@ def scaling(out):
         H=2**exponent;c=dict(base,horizon=H);p=rp(c,1);rv(c,1,p)
         # Also force distance mode at a horizon much larger than its finite row.
         d=load(ROOT/'inputs/examples/distance.json');d['horizon']=max(3,H);q=rp(d,2);rv(d,2,q)
-        huge.append(dict(horizon=H,collapse_bytes=size(p),distance_horizon=d['horizon'],distance_bytes=size(q),worst=[H,H]))
+        huge.append(dict(horizon=H,collapse_bytes=size(p),distance_horizon=d['horizon'],
+                         distance_bytes=size(q),worst_formula=[H,H],
+                         formula_branch='continuing-success'))
     write_json(out/'binary-horizons.json',huge)
-    return dict(rows=12,last=dict(zip(['horizon','source_nodes','source_paths','input_bytes','explicit_bytes','compact_bytes'],rows[-1])),binary_cases=len(huge),mismatches=mismatches)
+    worst=worst_cost_branch_check();write_json(out/'worst-cost-branches.json',worst)
+    mismatches.extend([['worst-cost',x] for x in worst['mismatches']])
+    return dict(rows=12,last=dict(zip(['horizon','source_nodes','source_paths','input_bytes','explicit_bytes','compact_bytes'],rows[-1])),binary_cases=len(huge),worst_cost_branches=len(worst['cases']),mismatches=mismatches)
 
 def examples(out):
     items=[]
@@ -237,7 +294,9 @@ def examples(out):
     for name in ('ordered','distance','sharp','failure','ambiguous','huge'):
         c=load(ROOT/'inputs/examples'/f'{name}.json');p=produce_least(c);K=verify_least(c,p)
         write_json(out/'examples'/f'{name}-least.json',p);minima.append([name,K])
-    return dict(retry_cases=items,graph_status='valid',least_cutoffs=minima,mismatches=[])
+    erasure=exhaustion_erasure_check();write_json(out/'observation-erasure.json',erasure)
+    return dict(retry_cases=items,graph_status='valid',least_cutoffs=minima,
+                observation_erasure_checks=1,mismatches=erasure['mismatches'])
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('task',choices=['grid','cutoff','graphs','supports','larger','scaling','examples']);p.add_argument('--initial',type=int,default=0);p.add_argument('--out',type=pathlib.Path,required=True);a=p.parse_args()

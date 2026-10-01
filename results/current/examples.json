@@ -27,11 +27,12 @@
     ]
   ],
   "measurement": {
-    "cpu_seconds": 0.007888544999999969,
-    "peak_rss_kib": 94128,
-    "wall_seconds": 0.005416488000037134
+    "cpu_seconds": 0.004003252000000013,
+    "peak_rss_kib": 94896,
+    "wall_seconds": 0.004077522000045519
   },
   "mismatches": [],
+  "observation_erasure_checks": 1,
   "retry_cases": [
     [
       "ordered",

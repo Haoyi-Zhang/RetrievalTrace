@@ -6,12 +6,12 @@
       "experiments/campaign.py",
       "cutoff",
       "--out",
-      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
+      "/mnt/data/work/targeted-fix/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
     ],
     "exit_code": 0,
-    "wall_seconds": 23.777916205999986,
-    "child_cpu_seconds": 23.771565,
-    "cumulative_child_peak_rss_kib": 114292
+    "wall_seconds": 23.70918949999998,
+    "child_cpu_seconds": 23.704613000000002,
+    "cumulative_child_peak_rss_kib": 114656
   },
   {
     "task": "larger",
@@ -20,11 +20,11 @@
       "experiments/campaign.py",
       "larger",
       "--out",
-      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
+      "/mnt/data/work/targeted-fix/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
     ],
     "exit_code": 0,
-    "wall_seconds": 1.8993162409999513,
-    "child_cpu_seconds": 1.8957809999999988,
-    "cumulative_child_peak_rss_kib": 114292
+    "wall_seconds": 1.8987244150000038,
+    "child_cpu_seconds": 1.8951099999999967,
+    "cumulative_child_peak_rss_kib": 114656
   }
 ]

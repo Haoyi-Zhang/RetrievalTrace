@@ -146,8 +146,14 @@ feedback node has the evidence encoded in its index on every incoming path,
 and terminal returns disclose exactly their owned evidence. Hence admission
 holds. Shared graph worlds and capsule worlds correspond componentwise,
 including irrelevant unused feedback keys. Both directions of trace refinement
-therefore agree between two expansions. This is a written correspondence proof,
-not an assertion that huge horizons are expanded or that Python is verified.
+therefore agree between two expansions. This is the uncapped mathematical
+construction. The delivered adapter first validates the target horizon as a
+non-Boolean integer in 1..H, preserves every nominal feedback key and retrieval
+outcome, and returns UNKNOWN rather than a smaller graph if the exact expansion
+would exceed the graph schema's module, outcome, or node ceilings. The node
+ceiling is enforced while unique states are discovered. This is a written
+correspondence proof, not an assertion that huge horizons are expanded or that
+Python is verified.
 
 ## G10. Compatible-candidate reduction
 

@@ -6,14 +6,14 @@
       "experiments/campaign.py",
       "grid",
       "--out",
-      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current",
+      "/mnt/data/work/targeted-fix/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current",
       "--initial",
       "0"
     ],
     "exit_code": 0,
-    "wall_seconds": 6.234184888999948,
-    "child_cpu_seconds": 6.229928,
-    "cumulative_child_peak_rss_kib": 100740
+    "wall_seconds": 6.096442767999974,
+    "child_cpu_seconds": 6.093902000000002,
+    "cumulative_child_peak_rss_kib": 101544
   },
   {
     "task": "grid-1",
@@ -22,14 +22,14 @@
       "experiments/campaign.py",
       "grid",
       "--out",
-      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current",
+      "/mnt/data/work/targeted-fix/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current",
       "--initial",
       "1"
     ],
     "exit_code": 0,
-    "wall_seconds": 4.355617761000076,
-    "child_cpu_seconds": 4.352408,
-    "cumulative_child_peak_rss_kib": 100740
+    "wall_seconds": 4.376507280999988,
+    "child_cpu_seconds": 4.371279,
+    "cumulative_child_peak_rss_kib": 101544
   },
   {
     "task": "grid-2",
@@ -38,14 +38,14 @@
       "experiments/campaign.py",
       "grid",
       "--out",
-      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current",
+      "/mnt/data/work/targeted-fix/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current",
       "--initial",
       "2"
     ],
     "exit_code": 0,
-    "wall_seconds": 4.247152354000036,
-    "child_cpu_seconds": 4.243825999999998,
-    "cumulative_child_peak_rss_kib": 100740
+    "wall_seconds": 4.201273739999976,
+    "child_cpu_seconds": 4.196434000000001,
+    "cumulative_child_peak_rss_kib": 101544
   },
   {
     "task": "grid-3",
@@ -54,13 +54,13 @@
       "experiments/campaign.py",
       "grid",
       "--out",
-      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current",
+      "/mnt/data/work/targeted-fix/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current",
       "--initial",
       "3"
     ],
     "exit_code": 0,
-    "wall_seconds": 2.7552923880000435,
-    "child_cpu_seconds": 2.7524670000000024,
-    "cumulative_child_peak_rss_kib": 100740
+    "wall_seconds": 2.6219837589999884,
+    "child_cpu_seconds": 2.6201470000000002,
+    "cumulative_child_peak_rss_kib": 101544
   }
 ]

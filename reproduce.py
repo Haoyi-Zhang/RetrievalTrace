@@ -9,8 +9,8 @@ GROUPS={'core':[('tests',),('optimized-tests',),('examples',),('supports',)],
         'graphs':[('graphs',),('scaling',)]}
 
 RAW={'grid':['grid-{i}.csv'],'cutoff':['uniform-cutoffs.csv'],'graphs':['graph-pairs.csv','graph-inputs.json'],
-     'larger':['larger-cases.json'],'scaling':['encoding-scaling.csv','binary-horizons.json'],
-     'examples':['examples/*.json']}
+     'larger':['larger-cases.json'],'scaling':['encoding-scaling.csv','binary-horizons.json','worst-cost-branches.json'],
+     'examples':['examples/*.json','observation-erasure.json']}
 
 def clean(x):
     if isinstance(x,dict):return {k:clean(v) for k,v in x.items() if k!='measurement'}

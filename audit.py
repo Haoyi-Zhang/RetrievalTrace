@@ -47,11 +47,19 @@ def main():
     for x in scaling:
         h=int(x['horizon']);require(int(x['source_nodes'])==4*h+1 and int(x['source_paths'])==2**h,'scaling dimensions')
     require({k:int(v) for k,v in scaling[-1].items()}==js('scaling.json')['last'],'scaling summary')
-    require(js('binary-horizons.json')[-1]['horizon']==2**60,'binary horizon')
+    binary=js('binary-horizons.json')
+    require(binary[-1]['horizon']==2**60,'binary horizon')
+    require(all(x['worst_formula']==[x['horizon'],x['horizon']] and x['formula_branch']=='continuing-success' for x in binary),'binary symbolic formula')
+    worst=js('worst-cost-branches.json')
+    require(len(worst['cases'])==3 and not worst['mismatches'],'worst-cost branches')
+    require(all(x['expected_worst']==x['operational_worst'] and x['jointly_attained'] for x in worst['cases']),'worst-cost trace comparison')
+    erasure=js('observation-erasure.json')
+    require(erasure['bits']==3 and erasure['target_horizon']==1,'erasure input')
+    require(erasure['adjacent_after_erasure'] and not erasure['larger_after_erasure'] and not erasure['mismatches'],'erasure boundary')
     for filename in ('cutoff.json','larger.json','graphs.json','scaling.json','supports.json','examples.json'):
         require(not js(filename)['mismatches'],'retained mismatch '+filename)
     for filename in ('tests.log','optimized-tests.log'):
-        text=(R/filename).read_text();require(re.search(r'Ran 83 tests',text) and text.rstrip().endswith('OK'),'unit result '+filename)
+        text=(R/filename).read_text();require(re.search(r'Ran 100 tests',text) and text.rstrip().endswith('OK'),'unit result '+filename)
     with (ROOT/'literature/calibration.csv').open(newline='') as f:cal=list(csv.DictReader(f))
     toplas=[x for x in cal if 'TOPLAS' in x['group'].split(';')]
     adjacent=[x for x in cal if 'adjacent' in x['group'].split(';')]
@@ -66,7 +74,7 @@ def main():
         for field in ('proof_or_checker','source_or_test','raw_result'):
             for name in x[field].split(';'):
                 if name and name!='not-applicable':require((ROOT/name).is_file(),'missing ledger evidence '+name)
-    print(json.dumps({'status':'consistent','tests_each_mode':83,**totals,'graph_pairs':40804,'larger_worlds':67744,'scholarly_references':44,'toplas_sample':12,'adjacent_sample':5,'influential_sample':5},sort_keys=True))
+    print(json.dumps({'status':'consistent','tests_each_mode':100,**totals,'graph_pairs':40804,'larger_worlds':67744,'scholarly_references':44,'toplas_sample':12,'adjacent_sample':5,'influential_sample':5},sort_keys=True))
     return 0
 if __name__=='__main__':
     try:sys.exit(main())

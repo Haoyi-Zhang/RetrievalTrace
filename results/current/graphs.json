@@ -3,9 +3,9 @@
   "invalid": 40122,
   "maximum_certificate_bytes": 843,
   "measurement": {
-    "cpu_seconds": 4.211969022,
-    "peak_rss_kib": 99748,
-    "wall_seconds": 4.210471248999966
+    "cpu_seconds": 4.043668284000001,
+    "peak_rss_kib": 100396,
+    "wall_seconds": 4.042922118999968
   },
   "minimum_certificate_bytes": 69,
   "mismatches": [],

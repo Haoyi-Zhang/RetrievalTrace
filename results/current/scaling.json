@@ -9,10 +9,11 @@
     "source_paths": 4096
   },
   "measurement": {
-    "cpu_seconds": 0.5280252350000001,
-    "peak_rss_kib": 113268,
-    "wall_seconds": 0.526519707000034
+    "cpu_seconds": 0.471124211,
+    "peak_rss_kib": 113816,
+    "wall_seconds": 0.47195073500000717
   },
   "mismatches": [],
-  "rows": 12
+  "rows": 12,
+  "worst_cost_branches": 3
 }

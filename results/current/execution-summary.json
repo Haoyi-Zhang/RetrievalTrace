@@ -1,6 +1,6 @@
 {
   "completed_commands": 12,
   "all_recorded_commands_successful": true,
-  "child_cpu_seconds": 53.165126,
-  "cumulative_child_peak_rss_kib": 114292
+  "child_cpu_seconds": 52.42327,
+  "cumulative_child_peak_rss_kib": 114656
 }

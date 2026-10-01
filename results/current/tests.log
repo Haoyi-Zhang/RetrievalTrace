@@ -81,8 +81,25 @@ test_sharp (test_least.LeastTests.test_sharp) ... ok
 test_small_oracle (test_least.LeastTests.test_small_oracle) ... ok
 test_wrong_horizon (test_least.LeastTests.test_wrong_horizon) ... ok
 test_zero_cutoff (test_least.LeastTests.test_zero_cutoff) ... ok
+test_boolean_target_horizon_is_malformed (test_targeted_repairs.AdapterAdmissionTests.test_boolean_target_horizon_is_malformed) ... ok
+test_five_bits_return_unknown_at_nominal_module_boundary (test_targeted_repairs.AdapterAdmissionTests.test_five_bits_return_unknown_at_nominal_module_boundary) ... ok
+test_four_bits_fit_nominal_module_boundary (test_targeted_repairs.AdapterAdmissionTests.test_four_bits_fit_nominal_module_boundary) ... ok
+test_fractional_target_horizon_is_malformed_before_expansion (test_targeted_repairs.AdapterAdmissionTests.test_fractional_target_horizon_is_malformed_before_expansion) ... ok
+test_node_budget_accepts_limit_and_rejects_limit_plus_one (test_targeted_repairs.AdapterAdmissionTests.test_node_budget_accepts_limit_and_rejects_limit_plus_one) ... ok
+test_thirty_three_retrieval_outcomes_return_unknown (test_targeted_repairs.AdapterAdmissionTests.test_thirty_three_retrieval_outcomes_return_unknown) ... ok
+test_thirty_two_retrieval_outcomes_fit_graph_boundary (test_targeted_repairs.AdapterAdmissionTests.test_thirty_two_retrieval_outcomes_fit_graph_boundary) ... ok
+test_duplicated_split_child_is_rejected (test_targeted_repairs.CoverSplitMutationTests.test_duplicated_split_child_is_rejected) ... ok
+test_missing_split_child_is_rejected (test_targeted_repairs.CoverSplitMutationTests.test_missing_split_child_is_rejected) ... ok
+test_feedback_boolean_alias_is_malformed (test_targeted_repairs.DistanceRowMetadataTests.test_feedback_boolean_alias_is_malformed) ... ok
+test_feedback_float_alias_is_malformed (test_targeted_repairs.DistanceRowMetadataTests.test_feedback_float_alias_is_malformed) ... ok
+test_original_certificate_remains_valid (test_targeted_repairs.DistanceRowMetadataTests.test_original_certificate_remains_valid) ... ok
+test_retrieval_boolean_alias_is_malformed (test_targeted_repairs.DistanceRowMetadataTests.test_retrieval_boolean_alias_is_malformed) ... ok
+test_three_atom_adjacent_passes_but_larger_fails (test_targeted_repairs.ObservationErasureBoundaryTests.test_three_atom_adjacent_passes_but_larger_fails) ... ok
+test_all_failures_branch (test_targeted_repairs.WorstVectorOracleTests.test_all_failures_branch) ... ok
+test_continuing_success_branch (test_targeted_repairs.WorstVectorOracleTests.test_continuing_success_branch) ... ok
+test_immediate_success_branch (test_targeted_repairs.WorstVectorOracleTests.test_immediate_success_branch) ... ok
 
 ----------------------------------------------------------------------
-Ran 83 tests in 0.083s
+Ran 100 tests in 0.088s
 
 OK

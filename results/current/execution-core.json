@@ -11,9 +11,9 @@
       "-v"
     ],
     "exit_code": 0,
-    "wall_seconds": 0.6313961319999635,
-    "child_cpu_seconds": 0.628338,
-    "cumulative_child_peak_rss_kib": 93612
+    "wall_seconds": 0.6679847959999847,
+    "child_cpu_seconds": 0.665709,
+    "cumulative_child_peak_rss_kib": 96296
   },
   {
     "task": "optimized-tests",
@@ -28,9 +28,9 @@
       "-v"
     ],
     "exit_code": 0,
-    "wall_seconds": 1.9525884820000101,
-    "child_cpu_seconds": 1.950191,
-    "cumulative_child_peak_rss_kib": 100760
+    "wall_seconds": 1.967248364999989,
+    "child_cpu_seconds": 1.9640460000000002,
+    "cumulative_child_peak_rss_kib": 101544
   },
   {
     "task": "examples",
@@ -39,12 +39,12 @@
       "experiments/campaign.py",
       "examples",
       "--out",
-      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
+      "/mnt/data/work/targeted-fix/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
     ],
     "exit_code": 0,
-    "wall_seconds": 0.5680655699998169,
-    "child_cpu_seconds": 0.5657979999999999,
-    "cumulative_child_peak_rss_kib": 100760
+    "wall_seconds": 0.5899090830000091,
+    "child_cpu_seconds": 0.587967,
+    "cumulative_child_peak_rss_kib": 101544
   },
   {
     "task": "supports",
@@ -53,11 +53,11 @@
       "experiments/campaign.py",
       "supports",
       "--out",
-      "/mnt/data/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
+      "/mnt/data/work/targeted-fix/trace-refinement-certificates-adaptive-retrieval-programs/artifact/results/current"
     ],
     "exit_code": 0,
-    "wall_seconds": 0.8078916320000644,
-    "child_cpu_seconds": 0.8057429999999997,
-    "cumulative_child_peak_rss_kib": 100760
+    "wall_seconds": 0.7663395829999899,
+    "child_cpu_seconds": 0.7632239999999999,
+    "cumulative_child_peak_rss_kib": 101544
   }
 ]
