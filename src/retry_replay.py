@@ -156,7 +156,7 @@ def verify(raw,K,cert,max_worlds=200000,max_cells=2000000):
                 elif B[e]==2: packet=('ok',e)
                 elif j==K: packet=('exhausted',e)
                 if packet is not None: require(j==K,'counterexample terminates too early')
-            require(type(w.get('packet')) is list and w['packet']==list(packet),'wrong terminal packet')
+            require(type(w.get('packet')) is list and identical(w['packet'],list(packet)),'wrong terminal packet')
             require(packet not in _target_packets(c,R,B,K),'target has a matching packet')
     else:
         require(False,'unknown certificate mode')

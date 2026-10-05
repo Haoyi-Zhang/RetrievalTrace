@@ -1,4 +1,4 @@
-"""Regression tests for claim/evidence repairs requested in the final audit."""
+"""Regression tests for coverage, certificate typing, and adapter admission."""
 from __future__ import annotations
 import copy,unittest
 from unittest.mock import patch
@@ -61,6 +61,10 @@ class DistanceRowMetadataTests(unittest.TestCase):
         return c,p
     def test_original_certificate_remains_valid(self):
         self.certificate()
+        c=example('sharp'); p=retry_produce(c,2)
+        self.assertEqual(retry_verify(c,2,p),'invalid')
+        p['witness']['packet'][1]=float(p['witness']['packet'][1])
+        with self.assertRaises(Invalid): retry_verify(c,2,p)
     def test_retrieval_boolean_alias_is_malformed(self):
         c,p=self.certificate(); p['rows'][0]['retrieval']=[False]
         with self.assertRaises(Invalid): retry_verify(c,2,p)
