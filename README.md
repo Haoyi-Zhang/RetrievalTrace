@@ -44,7 +44,11 @@ python check.py least inputs/examples/distance.json --certificate scratch/least.
 python audit.py
 ```
 
-There are 100 tests, passed in both interpreter modes. The ordered, distance and
+There are 106 tests, passed locally in both interpreter modes. The retained
+reference logs record the earlier 100-test suite; six additional runner
+regressions check that timeout and nonzero-exit output survives while the fail
+gate remains active. Their synthetic subprocess results are not campaign
+measurements. The ordered, distance and
 graph examples report `valid`; the sharp example reports `invalid`. The least
 example reports `least-valid` and cutoff 2. Its bundle proves validity at 2 and
 invalidity at 1; the rank upper bound alone would be 3.
@@ -83,6 +87,8 @@ and 2700 CPU-second limits. The runner also imposes a 2700-second child wall
 limit and disables core dumps. It records per-command CPU/wall times and the
 cumulative maximum child RSS; task JSON records the task's own RSS. Resource
 measurements vary between executions and are excluded from exact comparison.
+On a child timeout, captured output and a failed execution record (exit 124)
+are saved before the runner stops; the failed task is not retried or accepted.
 Existing retained results are not overwritten by these documented commands.
 
 The input generator and selection in `inputs/campaign.json` define the study.
@@ -90,6 +96,14 @@ The input generator and selection in `inputs/campaign.json` define the study.
 records the later clean-extraction replay. Reproduction checks supplied raw
 outputs, not only the final count of passing commands. Exact finite results are
 not measurements of production speed, retrieval accuracy or workload coverage.
+
+The prepared `.github/workflows/scientific-checks.yml` runs the material check,
+retained-evidence audit and complete serial reproduction from this standalone
+repository root on Ubuntu 24.04, for pushes to `main` or manual dispatch. It
+keeps nonzero and semantic-mismatch gates, bounds the complete checking command
+to 1,200 wall seconds (with a 15-second termination grace), retains the existing
+per-child resource limits, and always attempts to upload raw output. Preparing
+this workflow does not establish a successful remote run.
 
 ## Evidence and size
 
