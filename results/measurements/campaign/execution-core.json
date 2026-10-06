@@ -1,0 +1,63 @@
+[
+  {
+    "task": "tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.6377257520000015,
+    "child_cpu_seconds": 0.567381,
+    "cumulative_child_peak_rss_kib": 58656
+  },
+  {
+    "task": "optimized-tests",
+    "command": [
+      "python",
+      "-O",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 3.513090306999999,
+    "child_cpu_seconds": 0.7817830000000001,
+    "cumulative_child_peak_rss_kib": 58656
+  },
+  {
+    "task": "examples",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "examples",
+      "--out",
+      "/home/runner/work/RetrievalTrace/RetrievalTrace/.scientific-output/campaign"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.07745721700000274,
+    "child_cpu_seconds": 0.07621399999999984,
+    "cumulative_child_peak_rss_kib": 58656
+  },
+  {
+    "task": "supports",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "supports",
+      "--out",
+      "/home/runner/work/RetrievalTrace/RetrievalTrace/.scientific-output/campaign"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.2708162080000065,
+    "child_cpu_seconds": 0.2689880000000003,
+    "cumulative_child_peak_rss_kib": 58656
+  }
+]

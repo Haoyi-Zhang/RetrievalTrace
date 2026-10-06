@@ -1,0 +1,66 @@
+[
+  {
+    "task": "grid-0",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "grid",
+      "--out",
+      "/home/runner/work/RetrievalTrace/RetrievalTrace/.scientific-output/campaign",
+      "--initial",
+      "0"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 13.396297405999995,
+    "child_cpu_seconds": 13.390546,
+    "cumulative_child_peak_rss_kib": 58656
+  },
+  {
+    "task": "grid-1",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "grid",
+      "--out",
+      "/home/runner/work/RetrievalTrace/RetrievalTrace/.scientific-output/campaign",
+      "--initial",
+      "1"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 9.050797331999995,
+    "child_cpu_seconds": 9.009796999999999,
+    "cumulative_child_peak_rss_kib": 58656
+  },
+  {
+    "task": "grid-2",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "grid",
+      "--out",
+      "/home/runner/work/RetrievalTrace/RetrievalTrace/.scientific-output/campaign",
+      "--initial",
+      "2"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 8.735729331000002,
+    "child_cpu_seconds": 8.732811000000002,
+    "cumulative_child_peak_rss_kib": 58656
+  },
+  {
+    "task": "grid-3",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "grid",
+      "--out",
+      "/home/runner/work/RetrievalTrace/RetrievalTrace/.scientific-output/campaign",
+      "--initial",
+      "3"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 5.050809401000009,
+    "child_cpu_seconds": 5.047912999999999,
+    "cumulative_child_peak_rss_kib": 58656
+  }
+]

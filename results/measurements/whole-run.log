@@ -1,0 +1,22 @@
+{
+  "check": "repository-material-integrity",
+  "python_sources_parsed": 21,
+  "research_sources_present": 20,
+  "minimum_supplied_sources": 20,
+  "usage_document_present": true,
+  "errors": [],
+  "scope": "Documentation and source/configuration integrity only. Research programs, proofs and experiments are not executed."
+}
+{"adjacent_sample": 5, "contracts": 82620, "cost_packet_equivalence_checks": 826200, "graph_pairs": 40804, "influential_sample": 5, "larger_worlds": 67744, "operational_executions": 413100, "scholarly_references": 44, "status": "consistent", "tests_each_mode": 100, "toplas_sample": 12}
+{"group": "core", "task": "tests", "status": "passed", "child_cpu_seconds": 0.567381}
+{"group": "core", "task": "optimized-tests", "status": "passed", "child_cpu_seconds": 0.7817830000000001}
+{"group": "core", "task": "examples", "status": "passed", "child_cpu_seconds": 0.07621399999999984}
+{"group": "core", "task": "supports", "status": "passed", "child_cpu_seconds": 0.2689880000000003}
+{"group": "relational", "task": "grid-0", "status": "passed", "child_cpu_seconds": 13.390546}
+{"group": "relational", "task": "grid-1", "status": "passed", "child_cpu_seconds": 9.009796999999999}
+{"group": "relational", "task": "grid-2", "status": "passed", "child_cpu_seconds": 8.732811000000002}
+{"group": "relational", "task": "grid-3", "status": "passed", "child_cpu_seconds": 5.047912999999999}
+{"group": "cutoff", "task": "cutoff", "status": "passed", "child_cpu_seconds": 64.48404099999999}
+{"group": "cutoff", "task": "larger", "status": "passed", "child_cpu_seconds": 2.5835720000000006}
+{"group": "graphs", "task": "graphs", "status": "passed", "child_cpu_seconds": 7.801726999999995}
+{"group": "graphs", "task": "scaling", "status": "passed", "child_cpu_seconds": 0.7889640000000059}

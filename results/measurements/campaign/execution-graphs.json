@@ -1,0 +1,30 @@
+[
+  {
+    "task": "graphs",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "graphs",
+      "--out",
+      "/home/runner/work/RetrievalTrace/RetrievalTrace/.scientific-output/campaign"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 7.806044428999996,
+    "child_cpu_seconds": 7.801726999999995,
+    "cumulative_child_peak_rss_kib": 58656
+  },
+  {
+    "task": "scaling",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "scaling",
+      "--out",
+      "/home/runner/work/RetrievalTrace/RetrievalTrace/.scientific-output/campaign"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.7901176060000239,
+    "child_cpu_seconds": 0.7889640000000059,
+    "cumulative_child_peak_rss_kib": 58656
+  }
+]

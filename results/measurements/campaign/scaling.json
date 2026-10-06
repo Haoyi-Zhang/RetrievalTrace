@@ -1,0 +1,19 @@
+{
+  "binary_cases": 10,
+  "last": {
+    "compact_bytes": 60,
+    "explicit_bytes": 1081130,
+    "horizon": 12,
+    "input_bytes": 2496,
+    "source_nodes": 49,
+    "source_paths": 4096
+  },
+  "measurement": {
+    "cpu_seconds": 0.7219402819999999,
+    "peak_rss_kib": 34752,
+    "wall_seconds": 0.722084217999992
+  },
+  "mismatches": [],
+  "rows": 12,
+  "worst_cost_branches": 3
+}

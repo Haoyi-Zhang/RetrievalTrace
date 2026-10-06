@@ -1,0 +1,1 @@
+{"graph_status": "valid", "least_cutoffs": [["ordered", 1], ["distance", 2], ["sharp", 3], ["failure", 2], ["ambiguous", 1], ["huge", 2]], "measurement": {"cpu_seconds": 0.008994908999999995, "peak_rss_kib": 17120, "wall_seconds": 0.008748788000005447}, "mismatches": [], "observation_erasure_checks": 1, "task": "examples"}

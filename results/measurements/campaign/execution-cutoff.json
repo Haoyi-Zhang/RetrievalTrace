@@ -1,0 +1,30 @@
+[
+  {
+    "task": "cutoff",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "cutoff",
+      "--out",
+      "/home/runner/work/RetrievalTrace/RetrievalTrace/.scientific-output/campaign"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 64.49988300399998,
+    "child_cpu_seconds": 64.48404099999999,
+    "cumulative_child_peak_rss_kib": 58656
+  },
+  {
+    "task": "larger",
+    "command": [
+      "python",
+      "experiments/campaign.py",
+      "larger",
+      "--out",
+      "/home/runner/work/RetrievalTrace/RetrievalTrace/.scientific-output/campaign"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 2.585019269000014,
+    "child_cpu_seconds": 2.5835720000000006,
+    "cumulative_child_peak_rss_kib": 58656
+  }
+]
