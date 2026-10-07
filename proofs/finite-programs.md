@@ -148,8 +148,12 @@ holds. Shared graph worlds and capsule worlds correspond componentwise,
 including irrelevant unused feedback keys. Both directions of trace refinement
 therefore agree between two expansions. This is the uncapped mathematical
 construction. The delivered adapter first validates the target horizon as a
-non-Boolean integer in 1..H, preserves every nominal feedback key and retrieval
-outcome, and returns UNKNOWN rather than a smaller graph if the exact expansion
+non-Boolean integer in 1..H and returns UNKNOWN if the source horizon exceeds
+`max_horizon` (default 12), independently of reachable graph size. For example,
+a zero-bit, horizon-13 capsule with one successful outcome and stop-only feedback
+has a three-node expansion on either side, but exceeds the default horizon cap.
+For horizons within the cap, the adapter preserves every nominal feedback key and
+retrieval outcome, and returns UNKNOWN rather than a smaller graph if the exact expansion
 would exceed the graph schema's module, outcome, or node ceilings. The node
 ceiling is enforced while unique states are discovered. This is a written
 correspondence proof, not an assertion that huge horizons are expanded or that
