@@ -44,8 +44,10 @@ python check.py least inputs/examples/distance.json --certificate scratch/least.
 python audit.py
 ```
 
-There are 106 tests, passed locally in both interpreter modes. The retained
-reference logs record the earlier 100-test suite; six additional runner
+The current 111-test suite passes locally in both interpreter modes, including
+five observation-index regression groups with literal finite references. These
+groups run in the existing discovery commands and scientific workflow. The
+retained reference logs record the earlier 100-test suite; six additional runner
 regressions check that timeout and nonzero-exit output survives while the fail
 gate remains active. Their synthetic subprocess results are not campaign
 measurements. The ordered, distance and
@@ -169,6 +171,17 @@ importing search. `cutoff_search.py` locates the least valid cutoff;
 only small capsules. `tests/oracle.py` implements direct operational semantics
 and imports neither producer nor consumer. `experiments/campaign.py` selects,
 executes and records finite comparisons.
+
+The general producer and consumer each construct a call-local index by the full
+public word, terminal label and returned evidence. It retains every canonical
+census index and repeated route; each candidate still needs one whole-vector
+cost witness and its own support checks. The consumer still reconstructs both
+complete censuses and checks every positive obligation or the complete negative
+opposite packet bucket. Nonstandard Python stop-label objects retain the scan.
+`tests/test_observation_index.py` supplies independent literal route/tree and
+nonempty-product-world references, admission/corruption/cap checks, and mutation
+between calls. No route/world/cardinality is reduced, and no speedup or new
+full-campaign result is claimed. A single-packet census still adds index storage.
 
 The proof notes are `finite-programs.md`, `retry-theorems.md`,
 `cutoff-certificates.md`, `least-cutoff.md`, and `boundaries.md`. Their general

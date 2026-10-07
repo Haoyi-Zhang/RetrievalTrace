@@ -37,6 +37,16 @@ def _matches(a,b,direction):
         if direction=='coverage' and b['cost'][i]>a['cost'][i]: return False
     return True
 
+def _packet_groups(rows):
+    # Reconstructed locally by replay; no producer or supplied index is trusted.
+    if any(type(row['observation'][1]) is not str for row in rows): return None
+    groups={}
+    for position in range(len(rows)):
+        observation=rows[position]['observation']
+        packet=(tuple(observation[0]),observation[1],observation[2])
+        groups.setdefault(packet,[]).append((position,rows[position]))
+    return groups
+
 def _tree(tree,fixed,candidates,alphabets,budget):
     todo=[(tree,fixed)]
     while todo:
@@ -68,8 +78,12 @@ def verify(raw,cert,max_paths=100000,max_tree=200000):
         for direction,left,right in [('safety',T,S),('coverage',S,T)]:
             trees=cert['covers'].get(direction)
             require(type(trees) is list and len(trees)==len(left),'missing trace obligation')
+            groups=_packet_groups(right)
             for challenge,tree in zip(left,trees):
-                cand={j:r for j,r in enumerate(right) if _matches(challenge,r,direction)}
+                observation=challenge['observation']
+                packet=(tuple(observation[0]),observation[1],observation[2])
+                bucket=enumerate(right) if groups is None or type(observation[1]) is not str else groups.get(packet,())
+                cand={j:r for j,r in bucket if _matches(challenge,r,direction)}
                 _tree(tree,challenge['support'].copy(),cand,alphabet,[max_tree])
     else:
         direction=cert.get('direction'); require(direction in ('safety','coverage'),'wrong challenge direction')
@@ -78,6 +92,10 @@ def verify(raw,cert,max_paths=100000,max_tree=200000):
         world=cert.get('world'); require(type(world) is list and len(world)==len(alphabet),'world dimension')
         for w,n in zip(world,alphabet): integer(w,'world component',1,(1<<n)-1)
         require(all(s&~w==0 for s,w in zip(a['support'],world)),'challenge disabled')
-        require(not any(_matches(a,b,direction) and all(s&~w==0 for s,w in zip(b['support'],world)) for b in right),
+        observation=a['observation']
+        packet=(tuple(observation[0]),observation[1],observation[2])
+        groups=_packet_groups(right)
+        opposite=enumerate(right) if groups is None or type(observation[1]) is not str else groups.get(packet,())
+        require(not any(_matches(a,b,direction) and all(s&~w==0 for s,w in zip(b['support'],world)) for _,b in opposite),
                 'negative world has a compatible opposite trace')
     return status

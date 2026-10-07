@@ -29,6 +29,18 @@ def compatible(challenge,candidate,direction):
     small,large=(challenge,candidate) if direction=='safety' else (candidate,challenge)
     return all(a<=b for a,b in zip(small['cost'],large['cost']))
 
+def _observation_index(rows):
+    # This is a fresh index of the complete census, not a reduced census.
+    # Original indices and equal-observation route multiplicity are retained.
+    # Admission permits an equal string subclass as a stop label. Preserve the
+    # old scan for such Python-only inputs (including unhashable subclasses).
+    if any(type(row['observation'][1]) is not str for row in rows): return None
+    index={}
+    for j,row in enumerate(rows):
+        word,label,evidence=row['observation']
+        index.setdefault((tuple(word),label,evidence),[]).append((j,row))
+    return index
+
 def cover(support,candidates,alphabets,max_nodes=MAX_TREE):
     counter=[0]
     def solve(fixed):
@@ -50,13 +62,17 @@ def cover(support,candidates,alphabets,max_nodes=MAX_TREE):
 
 def produce(raw,max_paths=MAX_PATHS,max_tree=MAX_TREE):
     c=graph(raw); S=census(c,'source',max_paths); T=census(c,'target',max_paths)
+    indices={'safety':_observation_index(S),'coverage':_observation_index(T)}
     alphabet=[len(m['adds']) for m in c['modules']]
     challenges=[]
     for direction,left,right in [('safety',T,S),('coverage',S,T)]:
         for i,t in enumerate(left): challenges.append((len(t['route']),direction,i,t,right))
     trees={'safety':[None]*len(T),'coverage':[None]*len(S)}
     for _,direction,i,t,right in sorted(challenges,key=lambda q:q[:3]):
-        candidates=[(j,r['support']) for j,r in enumerate(right) if compatible(t,r,direction)]
+        word,label,evidence=t['observation']
+        index=indices[direction]
+        bucket=enumerate(right) if index is None or type(label) is not str else index.get((tuple(word),label,evidence),())
+        candidates=[(j,r['support']) for j,r in bucket if compatible(t,r,direction)]
         tree,bad=cover(t['support'],candidates,alphabet,max_tree)
         if bad is not None:
             return {'status':'invalid','direction':direction,'challenge':i,'world':bad}
