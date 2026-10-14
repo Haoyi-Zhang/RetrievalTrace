@@ -1,0 +1,112 @@
+[
+  {
+    "collapse_bytes": 59,
+    "distance_bytes": 1122,
+    "distance_horizon": 3,
+    "formula_branch": "continuing-success",
+    "horizon": 2,
+    "worst_formula": [
+      2,
+      2
+    ]
+  },
+  {
+    "collapse_bytes": 59,
+    "distance_bytes": 1122,
+    "distance_horizon": 4,
+    "formula_branch": "continuing-success",
+    "horizon": 4,
+    "worst_formula": [
+      4,
+      4
+    ]
+  },
+  {
+    "collapse_bytes": 60,
+    "distance_bytes": 1123,
+    "distance_horizon": 16,
+    "formula_branch": "continuing-success",
+    "horizon": 16,
+    "worst_formula": [
+      16,
+      16
+    ]
+  },
+  {
+    "collapse_bytes": 61,
+    "distance_bytes": 1124,
+    "distance_horizon": 256,
+    "formula_branch": "continuing-success",
+    "horizon": 256,
+    "worst_formula": [
+      256,
+      256
+    ]
+  },
+  {
+    "collapse_bytes": 62,
+    "distance_bytes": 1125,
+    "distance_horizon": 4096,
+    "formula_branch": "continuing-success",
+    "horizon": 4096,
+    "worst_formula": [
+      4096,
+      4096
+    ]
+  },
+  {
+    "collapse_bytes": 63,
+    "distance_bytes": 1126,
+    "distance_horizon": 65536,
+    "formula_branch": "continuing-success",
+    "horizon": 65536,
+    "worst_formula": [
+      65536,
+      65536
+    ]
+  },
+  {
+    "collapse_bytes": 66,
+    "distance_bytes": 1129,
+    "distance_horizon": 16777216,
+    "formula_branch": "continuing-success",
+    "horizon": 16777216,
+    "worst_formula": [
+      16777216,
+      16777216
+    ]
+  },
+  {
+    "collapse_bytes": 68,
+    "distance_bytes": 1131,
+    "distance_horizon": 4294967296,
+    "formula_branch": "continuing-success",
+    "horizon": 4294967296,
+    "worst_formula": [
+      4294967296,
+      4294967296
+    ]
+  },
+  {
+    "collapse_bytes": 73,
+    "distance_bytes": 1136,
+    "distance_horizon": 281474976710656,
+    "formula_branch": "continuing-success",
+    "horizon": 281474976710656,
+    "worst_formula": [
+      281474976710656,
+      281474976710656
+    ]
+  },
+  {
+    "collapse_bytes": 77,
+    "distance_bytes": 1140,
+    "distance_horizon": 1152921504606846976,
+    "formula_branch": "continuing-success",
+    "horizon": 1152921504606846976,
+    "worst_formula": [
+      1152921504606846976,
+      1152921504606846976
+    ]
+  }
+]

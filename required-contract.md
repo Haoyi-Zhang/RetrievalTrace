@@ -88,6 +88,16 @@ and JIT. Parent launch-to-exit was 2.328 seconds; successful compilation took
 performance comparison. No third-party implementation, retriever, service,
 LLVM/AOT pipeline, storage engine, or native production system was validated.
 
+The aggregate-output run verifies final conjunctions and world counts. A separate
+untimed pointwise run in `results/managed-pointwise/` compares every world/cutoff
+coordinate, both packet counts and all 350,141 relations to the Python records.
+It also compares all 17,232 final verdicts. The historical process timings above
+do not include this additional world-stream serialization.
+
+```sh
+python -B native/check_managed_worlds.py results/managed-pointwise/worlds.csv results/managed-pointwise/decisions.jsonl
+```
+
 ## Environment and scientific limits
 
 Actual environment: Intel Core i7-12700KF, 12 cores/20 logical processors,

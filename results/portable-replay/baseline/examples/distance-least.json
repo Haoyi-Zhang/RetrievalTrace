@@ -1,0 +1,347 @@
+{
+  "cutoff": 2,
+  "horizon": 10,
+  "kind": "least-cutoff",
+  "lower": {
+    "cutoff": 1,
+    "horizon": 10,
+    "mode": "collapse",
+    "status": "invalid",
+    "witness": {
+      "action": "exhausted",
+      "evidence": 7,
+      "feedback": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first": 0,
+      "retrieval": [
+        0,
+        1
+      ],
+      "runs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "second": 1
+    }
+  },
+  "upper": {
+    "cutoff": 2,
+    "horizon": 10,
+    "mode": "distance",
+    "rows": [
+      {
+        "distance": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
+        "feedback": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "parents": [
+          null,
+          null,
+          null,
+          [
+            -1,
+            0
+          ],
+          null,
+          null,
+          null,
+          null
+        ],
+        "retrieval": [
+          0
+        ]
+      },
+      {
+        "distance": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ],
+        "feedback": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "parents": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            -1,
+            1
+          ],
+          null,
+          null
+        ],
+        "retrieval": [
+          1
+        ]
+      },
+      {
+        "distance": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null
+        ],
+        "feedback": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "parents": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            -1,
+            2
+          ],
+          null
+        ],
+        "retrieval": [
+          2
+        ]
+      },
+      {
+        "distance": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          2
+        ],
+        "feedback": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "parents": [
+          null,
+          null,
+          null,
+          [
+            -1,
+            0
+          ],
+          null,
+          [
+            -1,
+            1
+          ],
+          null,
+          [
+            3,
+            1
+          ]
+        ],
+        "retrieval": [
+          0,
+          1
+        ]
+      },
+      {
+        "distance": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2
+        ],
+        "feedback": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "parents": [
+          null,
+          null,
+          null,
+          [
+            -1,
+            0
+          ],
+          null,
+          null,
+          [
+            -1,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "retrieval": [
+          0,
+          2
+        ]
+      },
+      {
+        "distance": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          2
+        ],
+        "feedback": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "parents": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "retrieval": [
+          1,
+          2
+        ]
+      },
+      {
+        "distance": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          2
+        ],
+        "feedback": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "parents": [
+          null,
+          null,
+          null,
+          [
+            -1,
+            0
+          ],
+          null,
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "retrieval": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "status": "valid"
+  }
+}

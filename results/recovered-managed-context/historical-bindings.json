@@ -1,0 +1,94 @@
+{
+  "project": "P049",
+  "historical": true,
+  "event_date": "2026-10-14",
+  "recovered_at_utc": "2026-10-14T20:34:59.175Z",
+  "record_scope": "Recovered existing historical Windows records; no execution, retiming or current scientific validation.",
+  "frozen_after": {
+    "sealed_utc": "2026-10-14T04:11:37.835621+00:00",
+    "manifest_sha256": "da6a45e5e3723179f3bada0b15c2833471c1acf529f3f75268e67a8a363a1a27",
+    "seal_sha256": "86bf977652a1b241107dd12a2d27120e2140b35dcda20aba228a7becbb7e88fd",
+    "environment_observed_utc": "2026-10-14T04:11:37.417001+00:00",
+    "candidate_inventory_sha256": "1e4c095edd60926833a2dee6ce241fb36c8e2e850ccc4989b8e83372c2efd3bb",
+    "commands_ledger_sha256": "5983b968671b514bc6f7482eabedd7c7c6eb47ffe164c43e8adbdc0672da61ea",
+    "role": "Post-execution integrity inventory, not a before-execution source/binary/input attestation."
+  },
+  "preexecution_hashes_present": false,
+  "no_before_execution_hashes_manufactured": true,
+  "original_private_records_modified": false,
+  "limits": "Complete matching frozen-after source bodies; pre-execution compiler/launch hashes were not captured.",
+  "managed": {
+    "summary": {
+      "cases": 16208,
+      "worlds": 294447,
+      "decisions": 350141,
+      "mismatches": 0,
+      "wall_seconds": 2.2949362,
+      "process_cpu_seconds": 2.25,
+      "peak_working_set_bytes": 35692544,
+      "clr": "4.0.30319.42000",
+      "scope": "Owned complete finite interpreter in a compiled managed Windows process; JIT, not native AOT, third-party validation, retrieval or deployment"
+    },
+    "build_parent_wall_seconds": 0.10083849998773076,
+    "launch_parent_wall_seconds": 2.3283992999931797,
+    "binary": {
+      "bytes": 14848,
+      "sha256": "ec08fd4d5d5531348b5b0aac74f293cbb4cb03ef2bcbbabe99829c9e2d6b136d"
+    },
+    "input": {
+      "historical_path": "artifact/results/required/cases.jsonl",
+      "bytes": 12313886,
+      "sha256": "ee1f5cc30b26980ef3ebccd49cca7991588d03b349c417e6fda0da033716e177",
+      "hash_capture": "frozen-after",
+      "current_retained_bytes_match": true
+    },
+    "output": {
+      "bytes": 652611,
+      "sha256": "098cb53859e355a2f2ffa4d2c9efa65b817f5450ebb80dbbad7c057451826deb"
+    },
+    "source": {
+      "historical_path": "artifact/native/OwnedRetry.cs",
+      "bytes": 5286,
+      "sha256": "cc2a2b456d13128a2b8d7d647ab918137cb8d69fc04547b552ab2312f3e93a0d",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "../portable-replay/historical-source/native/OwnedRetry.cs.snapshot.txt"
+    },
+    "interpretation": "Historical aggregate contract outputs only. Not the pointwise output, a new measurement, native AOT or deployment evidence."
+  },
+  "events": {
+    "failed_build": "records/csharp-build.json",
+    "successful_build": "records/csharp-build-backslash.json",
+    "parent_launch": "records/csharp-complete-campaign.json",
+    "in_Main_measurement": "in-process-summary.historical.json"
+  },
+  "timing_boundaries": {
+    "successful_compiler_parent_wall_seconds": 0.10083849998773076,
+    "launch_to_exit_parent_wall_seconds": 2.3283992999931797,
+    "in_Main_Stopwatch_wall_seconds": 2.2949362,
+    "process_cpu_seconds": 2.25,
+    "peak_working_set_bytes": 35692544
+  },
+  "compiler_environment_version_scope": "4.8.9222.0 is a genuine host inventory observation at 2026-10-14T04:11:37.417001+00:00, later than the build. A compiler binary hash/version captured at compile time is not present.",
+  "required_input_reference": "../required/cases.jsonl",
+  "current_retained_input_bytes_match_frozen_after": true,
+  "output_granularity": {
+    "input_records": 16208,
+    "aggregate_contract_verdicts": 17232,
+    "reported_evaluated_world_cutoff_relations": 350141,
+    "pointwise_world_verdict_stream": false
+  },
+  "contemporaneous_binding_gaps": [
+    "Historical compiler and launch receipts did not capture before-execution source/binary/input hashes; the complete matching frozen-after bodies are retained."
+  ],
+  "source_body_recovered": {
+    "historical_path": "artifact/native/OwnedRetry.cs",
+    "bytes": 5286,
+    "sha256": "cc2a2b456d13128a2b8d7d647ab918137cb8d69fc04547b552ab2312f3e93a0d",
+    "hash_capture": "frozen-after",
+    "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+    "matching_private_preimage_body_recovered": true,
+    "recovered_body": "../portable-replay/historical-source/native/OwnedRetry.cs.snapshot.txt"
+  }
+}

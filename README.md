@@ -44,7 +44,7 @@ python check.py least inputs/examples/distance.json --certificate scratch/least.
 python audit.py
 ```
 
-The current 119-test suite passes locally in both interpreter modes, including
+The 142-test suite passes locally in both interpreter modes, including
 five observation-index regression groups with literal finite references. These
 groups run in the existing discovery commands and scientific workflow. The
 retained reference logs record the earlier 100-test suite; six additional runner
@@ -215,9 +215,18 @@ Raw inputs/certificates, all world checks, all 930 timing rows, paired medians
 and their bindings are in `results/required`. All original input and historical
 result files are retained unchanged. Ordinary adjacent recomputation uses the
 same information and mathematical guarantee; all faster/slower outcomes remain.
-The compiled owned C# interpreter is a full operational cross-check, not a
-third-party retriever, native AOT validation or deployment benchmark. Its build
-and runtime scope are documented separately from Python timings.
+The C# interpreter now emits an optional per-world stream. The actual compiled
+run in `results/managed-pointwise/` matches all 350,141 keyed relations, both
+packet counts and all 17,232 final verdicts. Its 23 added regressions include
+a changed world verdict inside an already-invalid contract. Source/input
+bindings are captured before and after that run. The aggregate-output process
+timings in `results/required/` remain a separate measurement protocol.
+
+The twelve-task Windows replay, its 119-test logs and all 25 raw/ten summary
+comparisons are in `results/portable-replay/`; the corresponding aggregate
+managed build/launch context is in `results/recovered-managed-context/`.
+All 28 matching frozen-after source bodies are preserved. The 142-test logs
+for the pointwise addition are in `results/managed-pointwise/tests/`.
 
 The task-level campaign entry also runs on Windows: missing POSIX `resource`
 reports RSS as null and names the portable profile. `reproduce.py` continues

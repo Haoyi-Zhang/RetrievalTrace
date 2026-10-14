@@ -1,0 +1,1 @@
+{"contracts": 20655, "cost_packet_equivalence_checks": 206550, "initial": 0, "measurement": {"cpu_seconds": 6.125, "peak_rss_kib": null, "resource_profile": "portable task entry; no POSIX address-space/CPU cap or RSS measurement", "wall_seconds": 6.14100000000326}, "mismatches": [], "operational_executions": 103275, "task": "grid-0"}

@@ -1,0 +1,101 @@
+{
+  "project": "P049",
+  "historical": true,
+  "event_date": "2026-10-14",
+  "recovered_at_utc": "2026-10-14T20:34:59.175Z",
+  "record_scope": "Recovered existing historical Windows records; no execution, retiming or current scientific validation.",
+  "frozen_after": {
+    "sealed_utc": "2026-10-14T04:11:37.835621+00:00",
+    "manifest_sha256": "da6a45e5e3723179f3bada0b15c2833471c1acf529f3f75268e67a8a363a1a27",
+    "seal_sha256": "86bf977652a1b241107dd12a2d27120e2140b35dcda20aba228a7becbb7e88fd",
+    "environment_observed_utc": "2026-10-14T04:11:37.417001+00:00",
+    "candidate_inventory_sha256": "1e4c095edd60926833a2dee6ce241fb36c8e2e850ccc4989b8e83372c2efd3bb",
+    "commands_ledger_sha256": "5983b968671b514bc6f7482eabedd7c7c6eb47ffe164c43e8adbdc0672da61ea",
+    "role": "Post-execution integrity inventory, not a before-execution source/binary/input attestation."
+  },
+  "preexecution_hashes_present": false,
+  "no_before_execution_hashes_manufactured": true,
+  "original_private_records_modified": false,
+  "limits": "Complete matching frozen-after source bodies; pre-execution compiler/launch hashes were not captured.",
+  "bundle": "recovered-managed-context",
+  "files": [
+    {
+      "path": "logs/csharp-build.stdout.txt",
+      "bytes": 136,
+      "sha256": "5bbb8ffb808ead109c36027bb55a2ef487cc53716e53fa52121b72fae34ef7a0",
+      "archived_source": "<historical-private>/commands/csharp-build.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/csharp-build.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/csharp-build.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/csharp-build-backslash.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/csharp-build-backslash.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/csharp-build-backslash.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/csharp-build-backslash.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/csharp-complete-campaign.stdout.txt",
+      "bytes": 329,
+      "sha256": "4e47136549b0ff1e0a5480ad90ce013ee876fa47ad88d54834c18f188cb192a2",
+      "archived_source": "<historical-private>/commands/csharp-complete-campaign.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/csharp-complete-campaign.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/csharp-complete-campaign.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 989,
+      "sha256": "93ce4094f9d210da9445b376e10ae4e4f5df509490aa6180886162fad0f7f247",
+      "archived_source": "<historical-private>/environment.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "binary/interpreter.bin",
+      "bytes": 14848,
+      "sha256": "ec08fd4d5d5531348b5b0aac74f293cbb4cb03ef2bcbbabe99829c9e2d6b136d",
+      "archived_source": "<historical-private>/bin/OwnedRetry.exe",
+      "copy_rule": "Exact retained executable bytes published as inert binary data"
+    },
+    {
+      "path": "managed-world-decisions.historical.jsonl",
+      "bytes": 652611,
+      "sha256": "098cb53859e355a2f2ffa4d2c9efa65b817f5450ebb80dbbad7c057451826deb",
+      "archived_source": "<historical-private>/managed-world-decisions.jsonl",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "in-process-summary.historical.json",
+      "bytes": 329,
+      "sha256": "4e47136549b0ff1e0a5480ad90ce013ee876fa47ad88d54834c18f188cb192a2",
+      "archived_source": "<historical-private>/commands/csharp-complete-campaign.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    }
+  ],
+  "receipt_views": [
+    "records/csharp-build.json",
+    "records/csharp-build-backslash.json",
+    "records/csharp-complete-campaign.json"
+  ],
+  "receipt_view_rule": "Only command/cwd paths are redacted; all genuine recorded measurement/status/timestamp/environment/stream-digest fields are preserved. Original receipt SHA256 and frozen-after binding are in each recovery block.",
+  "stdout_stderr_hashes_verified": true,
+  "copy_originals_unchanged": true
+}

@@ -1,0 +1,908 @@
+{
+  "project": "P049",
+  "historical": true,
+  "event_date": "2026-10-14",
+  "recovered_at_utc": "2026-10-14T20:34:59.175Z",
+  "record_scope": "Recovered existing historical Windows records; no execution, retiming or current scientific validation.",
+  "frozen_after": {
+    "sealed_utc": "2026-10-14T04:11:37.835621+00:00",
+    "manifest_sha256": "da6a45e5e3723179f3bada0b15c2833471c1acf529f3f75268e67a8a363a1a27",
+    "seal_sha256": "86bf977652a1b241107dd12a2d27120e2140b35dcda20aba228a7becbb7e88fd",
+    "environment_observed_utc": "2026-10-14T04:11:37.417001+00:00",
+    "candidate_inventory_sha256": "1e4c095edd60926833a2dee6ce241fb36c8e2e850ccc4989b8e83372c2efd3bb",
+    "commands_ledger_sha256": "5983b968671b514bc6f7482eabedd7c7c6eb47ffe164c43e8adbdc0672da61ea",
+    "role": "Post-execution integrity inventory, not a before-execution source/binary/input attestation."
+  },
+  "preexecution_hashes_present": false,
+  "no_before_execution_hashes_manufactured": true,
+  "original_private_records_modified": false,
+  "limits": "Complete matching frozen-after source bodies; pre-execution compiler/launch hashes were not captured.",
+  "bundle": "portable-replay",
+  "files": [
+    {
+      "path": "outputs/examples.json",
+      "bytes": 949,
+      "sha256": "82ee6644c26e5b57e3c57fd9646405229c35068c42422e73092a86f5875ec77e",
+      "archived_source": "<historical-private>/current-replay/examples.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples.json",
+      "bytes": 812,
+      "sha256": "783a7cd2a05de1c46789dd549b7ae20d04e220195930fc9fd2e606ad06604bc3",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/supports.json",
+      "bytes": 394,
+      "sha256": "f4d0b06ea77d26cd94ad97cf5ab6d17d141acea2d20d3d94c8b4576d8b1ed7ed",
+      "archived_source": "<historical-private>/current-replay/supports.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/supports.json",
+      "bytes": 297,
+      "sha256": "d8a8a3b247bd893d436f6c135b1830148bf40302d1ffd9ace0439a6fe99bb02c",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/supports.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/grid-0.json",
+      "bytes": 365,
+      "sha256": "91cccf211e9a1d14b6e3f073ac3822aad808a99a73395c9e1a7bb6cd3b2834c5",
+      "archived_source": "<historical-private>/current-replay/grid-0.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/grid-0.json",
+      "bytes": 264,
+      "sha256": "acb662e15bb0a0b9a23e04a7b8df6b4be0bc74da262990edef6fe63f0ef6fbd5",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/grid-0.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/grid-1.json",
+      "bytes": 368,
+      "sha256": "15292e6adbae3c2a2f71e639e145c7dbee46b6778191968ad4f387b48d67aebd",
+      "archived_source": "<historical-private>/current-replay/grid-1.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/grid-1.json",
+      "bytes": 264,
+      "sha256": "bb485cc20e86bba293515aecfac4a6a352948ca9afdb88183256f477c87c2ea1",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/grid-1.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/grid-2.json",
+      "bytes": 365,
+      "sha256": "1d4ecd5efb315564f3d8bda9530289a2a3902eaca39a78e1c41ee4eb100b7da1",
+      "archived_source": "<historical-private>/current-replay/grid-2.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/grid-2.json",
+      "bytes": 263,
+      "sha256": "90638818045ecc9be185c2e0746ef7748c384daa7dcd052c7a00b7a2eb1ed82b",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/grid-2.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/grid-3.json",
+      "bytes": 368,
+      "sha256": "7d1cf66255f6957ecb4d4bd23e001e353b3a80c95ce9e0d795d96c1bfb58b509",
+      "archived_source": "<historical-private>/current-replay/grid-3.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/grid-3.json",
+      "bytes": 269,
+      "sha256": "1bdeb2da26ca534c98573cec8671f702c40fff374b861caeec35436e9c5c022f",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/grid-3.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/cutoff.json",
+      "bytes": 519,
+      "sha256": "e90cae5020381968b1b4e3eb388bc808ec76fa9b6c2e1c7b797f73d90cf465bb",
+      "archived_source": "<historical-private>/current-replay/cutoff.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/cutoff.json",
+      "bytes": 411,
+      "sha256": "bfb4dcff41ed3c9ef4d94ceeba410b1e3d7b9ae06d4a5ac5daf491e21a396a2f",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/cutoff.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/larger.json",
+      "bytes": 1084,
+      "sha256": "71d62ae8ab86747be799e5747237efa655309da9f598012b8299ebc076d095b1",
+      "archived_source": "<historical-private>/current-replay/larger.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/larger.json",
+      "bytes": 944,
+      "sha256": "483907f83d774b460a1b381b08f710f28e74275b272e283408230bde2b345bb5",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/larger.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/graphs.json",
+      "bytes": 499,
+      "sha256": "79cd51c31827589568fe0b69f410fba3586eab6ed8be95c1f197d3b8e6c84fda",
+      "archived_source": "<historical-private>/current-replay/graphs.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/graphs.json",
+      "bytes": 394,
+      "sha256": "27fe776636acf2fadb77572f35704a1d3e6309d457551759b2602a6a87f579e4",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/graphs.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/scaling.json",
+      "bytes": 489,
+      "sha256": "1085f73c7ed15478488b753a678cec455fb8297c5a1d767bd2080f3e97ae2cf3",
+      "archived_source": "<historical-private>/current-replay/scaling.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/scaling.json",
+      "bytes": 377,
+      "sha256": "19574be1dc68aeffa1555d6c3bb5cc0794d405163e276d23908fc201764edede",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/scaling.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/ambiguous-certificate.json",
+      "bytes": 84,
+      "sha256": "9857caf2387e06ae2d36b292f6373218985b4295908994bd85577d5af753bfa3",
+      "archived_source": "<historical-private>/current-replay/examples/ambiguous-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/ambiguous-certificate.json",
+      "bytes": 78,
+      "sha256": "d22363ca6f0f0f90f56feffc07fc0393b0ba663c8dc81b2160f752cd1e4a9faa",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/ambiguous-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/ambiguous-least.json",
+      "bytes": 190,
+      "sha256": "59261a0f14e71d10553c0bb2beae0d62dbb324ab171b70a7ecb9f963c280fb6f",
+      "archived_source": "<historical-private>/current-replay/examples/ambiguous-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/ambiguous-least.json",
+      "bytes": 178,
+      "sha256": "76e9867c291c2a31acb94469c95fb492a7593c27994af7af4fdede8cd6f1821d",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/ambiguous-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/distance-certificate.json",
+      "bytes": 4060,
+      "sha256": "bca047af3069ed8d285746d83dc6493a6a2989c7dbe89aaa25575c01f1d4e274",
+      "archived_source": "<historical-private>/current-replay/examples/distance-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/distance-certificate.json",
+      "bytes": 3754,
+      "sha256": "d74f90390734ae08ace7831eba173d022240df90d4ccc2356c3cd26fd3c9314b",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/distance-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/distance-least.json",
+      "bytes": 5279,
+      "sha256": "2adc9446a5e74a40cd2e464bbcd72f081b8ab211e0eea4ed7b4929c9933ac6f5",
+      "archived_source": "<historical-private>/current-replay/examples/distance-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/distance-least.json",
+      "bytes": 4932,
+      "sha256": "c22f7fdff4efd66b858847dafbc711b491fe9d1a7affa308fea879de83acca15",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/distance-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/failure-certificate.json",
+      "bytes": 387,
+      "sha256": "d3b44202a85fc8c990a3ec465feb228a1debb08096bf634b0828e4294db2beb3",
+      "archived_source": "<historical-private>/current-replay/examples/failure-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/failure-certificate.json",
+      "bytes": 357,
+      "sha256": "5ba4d3e9d65bd5e250dc24f0dc339943de6cf041083cf10eb7144de426a87cc5",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/failure-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/failure-least.json",
+      "bytes": 641,
+      "sha256": "0aaf86fe1359ccfc97d6d19892f1487c47fddd7593758972116521f7eb38f6b4",
+      "archived_source": "<historical-private>/current-replay/examples/failure-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/failure-least.json",
+      "bytes": 599,
+      "sha256": "f1a204524b3e0f578045bd47bde9d4d8d69665d07b9765fac21b8e1f3a8b7c8d",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/failure-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/graph-certificate.json",
+      "bytes": 2401,
+      "sha256": "7ec790217a15b1a29b0440f8f49a9a07c1d5294aba959c3b2c023f80e53b20d1",
+      "archived_source": "<historical-private>/current-replay/examples/graph-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/graph-certificate.json",
+      "bytes": 2210,
+      "sha256": "2290dff29b4ffbf077e9671214a9efb22d4ff14c42a07ab6267b4e5d2339b94b",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/graph-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/huge-certificate.json",
+      "bytes": 4077,
+      "sha256": "4ea2e55c068348b7be7c10ea3bfa469c5ad6951b49ee17f7b826899dfe82ab21",
+      "archived_source": "<historical-private>/current-replay/examples/huge-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/huge-certificate.json",
+      "bytes": 3771,
+      "sha256": "ffa7768b90d3d1b7b62f2c9f0b14bc72c3c0fb7e29687b09a26ff671b24571ba",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/huge-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/huge-least.json",
+      "bytes": 5348,
+      "sha256": "1eba520090cf10e0c209504ac588f1a94b9a051b484a39d0c036b0bd782543e1",
+      "archived_source": "<historical-private>/current-replay/examples/huge-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/huge-least.json",
+      "bytes": 5001,
+      "sha256": "502b07f3fc4241cbbbf6864a1b8b13d581d05602acff252d1fe723e188f48734",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/huge-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/ordered-certificate.json",
+      "bytes": 84,
+      "sha256": "9857caf2387e06ae2d36b292f6373218985b4295908994bd85577d5af753bfa3",
+      "archived_source": "<historical-private>/current-replay/examples/ordered-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/ordered-certificate.json",
+      "bytes": 78,
+      "sha256": "d22363ca6f0f0f90f56feffc07fc0393b0ba663c8dc81b2160f752cd1e4a9faa",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/ordered-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/ordered-least.json",
+      "bytes": 190,
+      "sha256": "59261a0f14e71d10553c0bb2beae0d62dbb324ab171b70a7ecb9f963c280fb6f",
+      "archived_source": "<historical-private>/current-replay/examples/ordered-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/ordered-least.json",
+      "bytes": 178,
+      "sha256": "76e9867c291c2a31acb94469c95fb492a7593c27994af7af4fdede8cd6f1821d",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/ordered-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/sharp-certificate.json",
+      "bytes": 376,
+      "sha256": "42c60ff5cd43dca1e7fcd0d7b9f67553f2b3b3d7b8657fe3995e9e2d4a90c823",
+      "archived_source": "<historical-private>/current-replay/examples/sharp-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/sharp-certificate.json",
+      "bytes": 344,
+      "sha256": "bd3bd150698bd279599bbd1ae12830aaed8861e7b19440aa484b8816eb7ecec6",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/sharp-certificate.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/examples/sharp-least.json",
+      "bytes": 634,
+      "sha256": "134454034078d18ee046e231705da412e583571f9c18f9d5de49c13077891de7",
+      "archived_source": "<historical-private>/current-replay/examples/sharp-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/examples/sharp-least.json",
+      "bytes": 590,
+      "sha256": "f251787570f33da9e81194a0906e75907ecd6b6af6f2473eacb03551748cde2f",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/examples/sharp-least.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/observation-erasure.json",
+      "bytes": 875,
+      "sha256": "121e4b275edd415ee069e49694526918506b61f4c2948c36b644659f3900a9c5",
+      "archived_source": "<historical-private>/current-replay/observation-erasure.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/observation-erasure.json",
+      "bytes": 817,
+      "sha256": "e240f766c871cc1cea57593225d8c942ef7b5273694aa86749e70a24e45e0989",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/observation-erasure.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/grid-0.csv",
+      "bytes": 659937,
+      "sha256": "a3e6611b67d2506b2e866ca9b4fc12d2d3cd71b8a0502430621a2dd5ece23752",
+      "archived_source": "<historical-private>/current-replay/grid-0.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/grid-0.csv",
+      "bytes": 659937,
+      "sha256": "a3e6611b67d2506b2e866ca9b4fc12d2d3cd71b8a0502430621a2dd5ece23752",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/grid-0.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/grid-1.csv",
+      "bytes": 653350,
+      "sha256": "52610a97c464356c52454121e59d4c4cae093d3db9bd68982d71598604051309",
+      "archived_source": "<historical-private>/current-replay/grid-1.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/grid-1.csv",
+      "bytes": 653350,
+      "sha256": "52610a97c464356c52454121e59d4c4cae093d3db9bd68982d71598604051309",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/grid-1.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/grid-2.csv",
+      "bytes": 679270,
+      "sha256": "cc1da492f970db7de992969b7a688905c3f2421c365c731990dfa5c49edc941f",
+      "archived_source": "<historical-private>/current-replay/grid-2.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/grid-2.csv",
+      "bytes": 679270,
+      "sha256": "cc1da492f970db7de992969b7a688905c3f2421c365c731990dfa5c49edc941f",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/grid-2.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/grid-3.csv",
+      "bytes": 669145,
+      "sha256": "e7d4afa4527f5b569a08aa448f3a2034bff4d3ca0d06f90e4de5e654a527a320",
+      "archived_source": "<historical-private>/current-replay/grid-3.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/grid-3.csv",
+      "bytes": 669145,
+      "sha256": "e7d4afa4527f5b569a08aa448f3a2034bff4d3ca0d06f90e4de5e654a527a320",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/grid-3.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/uniform-cutoffs.csv",
+      "bytes": 1276765,
+      "sha256": "77531dc7ee22bf6ee826d2da269b6785d68e4c6aff52846536a41e55446ecb58",
+      "archived_source": "<historical-private>/current-replay/uniform-cutoffs.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/uniform-cutoffs.csv",
+      "bytes": 1276765,
+      "sha256": "77531dc7ee22bf6ee826d2da269b6785d68e4c6aff52846536a41e55446ecb58",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/uniform-cutoffs.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/larger-cases.json",
+      "bytes": 1798546,
+      "sha256": "f6df8331bf25f798c9262724a30191bfbb92bb02f18a28cc6412e2b42dacd9b1",
+      "archived_source": "<historical-private>/current-replay/larger-cases.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/larger-cases.json",
+      "bytes": 1692536,
+      "sha256": "da99564f2d977bd703b97d7a0dfc18df9603d68f389f8e760fa1bd9c0e57ff25",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/larger-cases.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/graph-pairs.csv",
+      "bytes": 527537,
+      "sha256": "e82802782aa8f41cb30a0f42064d80e317b40d70a5f67900c79fe1f0709da4f4",
+      "archived_source": "<historical-private>/current-replay/graph-pairs.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/graph-pairs.csv",
+      "bytes": 527537,
+      "sha256": "e82802782aa8f41cb30a0f42064d80e317b40d70a5f67900c79fe1f0709da4f4",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/graph-pairs.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/graph-inputs.json",
+      "bytes": 130780,
+      "sha256": "5e35f548f186b663e31efbcc5556a6daeac1aa66fecaaaa5d91dcb967fc336a5",
+      "archived_source": "<historical-private>/current-replay/graph-inputs.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/graph-inputs.json",
+      "bytes": 122564,
+      "sha256": "1cbbdd57cc0913d59dbb35434b194eb0fc8f9ee81638524406679d488ea91838",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/graph-inputs.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/encoding-scaling.csv",
+      "bytes": 355,
+      "sha256": "000372da9622a4c3de1ca5aef04de5c0ceca2e5d730f94b4718a394c7f6d54be",
+      "archived_source": "<historical-private>/current-replay/encoding-scaling.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/encoding-scaling.csv",
+      "bytes": 355,
+      "sha256": "000372da9622a4c3de1ca5aef04de5c0ceca2e5d730f94b4718a394c7f6d54be",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/encoding-scaling.csv",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/binary-horizons.json",
+      "bytes": 2327,
+      "sha256": "136ee88feee8985210a1bbb8992fe80c23b30913fc67dca94a4eb7a77e53cc2d",
+      "archived_source": "<historical-private>/current-replay/binary-horizons.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/binary-horizons.json",
+      "bytes": 2215,
+      "sha256": "e0f59c9250d3eb8ed341093bfdf76b66e5acd312f101d0178a11c2fa0936b281",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/binary-horizons.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "outputs/worst-cost-branches.json",
+      "bytes": 1997,
+      "sha256": "bfd6ab8f628c3dbfbbb95649f25a14d6dec88a11408e3debf836e37b19ab120d",
+      "archived_source": "<historical-private>/current-replay/worst-cost-branches.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "baseline/worst-cost-branches.json",
+      "bytes": 1876,
+      "sha256": "3cb79dd196b291057c6c414b1994898d12172850590dc60014fd3300868a26cc",
+      "archived_source": "<historical-private>/preimage/artifact/results/current/worst-cost-branches.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-tests.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-tests.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-tests.stderr.txt",
+      "bytes": 11578,
+      "sha256": "ae5aa3d8b3eef0ba6edc687f2efb91c63d9e50e623a8fc8f792baaf2418b6dff",
+      "archived_source": "<historical-private>/commands/current-tests.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-optimized-tests.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-optimized-tests.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-optimized-tests.stderr.txt",
+      "bytes": 11578,
+      "sha256": "f701e57ff8e203a7a1ea91af6cc788d73b226e0beba38e304d454ca489953180",
+      "archived_source": "<historical-private>/commands/current-optimized-tests.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-examples.stdout.txt",
+      "bytes": 390,
+      "sha256": "6dd8d47ae8f4eb94b78b52ddb7279d5cd0c9b0b1a8c82f38167025889e4d751a",
+      "archived_source": "<historical-private>/commands/current-examples.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-examples.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-examples.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-supports.stdout.txt",
+      "bytes": 365,
+      "sha256": "479618b4e0de373d0f80403b9d43a52443dd7815ce1c9eb8cb597c5bf4e0494f",
+      "archived_source": "<historical-private>/commands/current-supports.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-supports.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-supports.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-grid-0.stdout.txt",
+      "bytes": 337,
+      "sha256": "4c5ee488a593d8c3c9345b57e7dd3229d453267a80922ea82349b4cd4eb5c49e",
+      "archived_source": "<historical-private>/commands/current-grid-0.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-grid-0.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-grid-0.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-grid-1.stdout.txt",
+      "bytes": 340,
+      "sha256": "eac0b5b100f098839ebd513c0a87a276789a2f961090c8bfd5292cf01b85fe77",
+      "archived_source": "<historical-private>/commands/current-grid-1.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-grid-1.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-grid-1.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-grid-2.stdout.txt",
+      "bytes": 337,
+      "sha256": "8f019fc0180e4fcb77825ccdabf8fbb97411f42c28b6a48d8bec5420159f929f",
+      "archived_source": "<historical-private>/commands/current-grid-2.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-grid-2.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-grid-2.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-grid-3.stdout.txt",
+      "bytes": 340,
+      "sha256": "7dfbe10b9f94c65a55f90a3c70743a05790b727121cf2f1220bdcf4b82decbcd",
+      "archived_source": "<historical-private>/commands/current-grid-3.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-grid-3.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-grid-3.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-cutoff.stdout.txt",
+      "bytes": 462,
+      "sha256": "c74c5e73ffa106eb0d324375e0255adc63803902e5ecb0e67f5f093ab99eed37",
+      "archived_source": "<historical-private>/commands/current-cutoff.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-cutoff.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-cutoff.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-larger.stdout.txt",
+      "bytes": 273,
+      "sha256": "57b787ecab9ed8e4c20d92b39135c1548df22e298099a8c89c1e8957cdc5324e",
+      "archived_source": "<historical-private>/commands/current-larger.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-larger.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-larger.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-graphs.stdout.txt",
+      "bytes": 456,
+      "sha256": "627217ebd21eabb105ed8070a655ce0e6a7d74c0a5f5195639bc730d891cc149",
+      "archived_source": "<historical-private>/commands/current-graphs.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-graphs.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-graphs.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-scaling.stdout.txt",
+      "bytes": 427,
+      "sha256": "46df897525149457fedfd865864581526f154c67614f92842be400017a881b36",
+      "archived_source": "<historical-private>/commands/current-scaling.stdout.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "logs/current-scaling.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archived_source": "<historical-private>/commands/current-scaling.stderr.txt",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 989,
+      "sha256": "93ce4094f9d210da9445b376e10ae4e4f5df509490aa6180886162fad0f7f247",
+      "archived_source": "<historical-private>/environment.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-comparison.json",
+      "bytes": 5416,
+      "sha256": "8736c669466326d6145e693e0e9af2ef4dfa741cfe8d0e422321decfbcf4c8ec",
+      "archived_source": "<historical-private>/current-replay-comparison.json",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/check.py.snapshot.txt",
+      "bytes": 2333,
+      "sha256": "8eced4a9f29340a1ff0bfbf1eb8370be5a8eaf0a90e0d3054c1eb28038206556",
+      "archived_source": "<historical-private>/preimage/artifact/check.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/experiments/__init__.py.snapshot.txt",
+      "bytes": 73,
+      "sha256": "add548a5b38abbd45e751d4cdaf3f1d67ba0bed9f993049d010caa7b3a209e79",
+      "archived_source": "<historical-private>/preimage/artifact/experiments/__init__.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/reproduce.py.snapshot.txt",
+      "bytes": 6557,
+      "sha256": "cafb10a4d8011a1d8690c8ce89926fb6e2a53c6f07b068b339ead6e82f63e020",
+      "archived_source": "<historical-private>/preimage/artifact/reproduce.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/src/__init__.py.snapshot.txt",
+      "bytes": 82,
+      "sha256": "d9fa329b83c05727460879572b9f55173dd641ce0b6e8ee37f9a9def9b005622",
+      "archived_source": "<historical-private>/preimage/artifact/src/__init__.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/src/adapter.py.snapshot.txt",
+      "bytes": 3898,
+      "sha256": "9ada0388a7e0ac4cd84649dfe7713713f49c2a5a4c57048945793f6c1812a4a2",
+      "archived_source": "<historical-private>/preimage/artifact/src/adapter.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/src/cutoff_replay.py.snapshot.txt",
+      "bytes": 837,
+      "sha256": "d64e553433601c551a5277839cef8d17ac56c38d04f945b38ed8556d06897a8a",
+      "archived_source": "<historical-private>/preimage/artifact/src/cutoff_replay.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/src/cutoff_search.py.snapshot.txt",
+      "bytes": 625,
+      "sha256": "d0e425e5290fcce37efbe254d519d8d36f70dc6e7dc3deda5136ac83423755fc",
+      "archived_source": "<historical-private>/preimage/artifact/src/cutoff_search.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/src/graph_producer.py.snapshot.txt",
+      "bytes": 5130,
+      "sha256": "17f8e2a625464b9460b588af9f0796a7e04109de692bb3b37bf61ddf81c4a971",
+      "archived_source": "<historical-private>/preimage/artifact/src/graph_producer.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/src/graph_replay.py.snapshot.txt",
+      "bytes": 5703,
+      "sha256": "9c719ee0d12a70118f3577b0b39093412afc110631ab15097e9ae10cb919ff36",
+      "archived_source": "<historical-private>/preimage/artifact/src/graph_replay.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/src/retry_producer.py.snapshot.txt",
+      "bytes": 4713,
+      "sha256": "436b8767eacc27c8726cc323438c598d4d16400e371da7ce065db8eeb46c5866",
+      "archived_source": "<historical-private>/preimage/artifact/src/retry_producer.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/src/retry_replay.py.snapshot.txt",
+      "bytes": 9233,
+      "sha256": "6c327026e402a1bf542f356afe5278de8783815aaac0448c6ae5a7d947a071aa",
+      "archived_source": "<historical-private>/preimage/artifact/src/retry_replay.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/src/schema.py.snapshot.txt",
+      "bytes": 8560,
+      "sha256": "6b09f7bd1e7eb75042ac350dafb088bc0f12d801381729b5b96f4c0b04a4b4a6",
+      "archived_source": "<historical-private>/preimage/artifact/src/schema.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/tests/__init__.py.snapshot.txt",
+      "bytes": 66,
+      "sha256": "d6446b860e07534b09d429667bcecf3eeea2c6b59cf37748695d9a589139bbee",
+      "archived_source": "<historical-private>/preimage/artifact/tests/__init__.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/tests/oracle.py.snapshot.txt",
+      "bytes": 3457,
+      "sha256": "bfd5980b20acbcbb37450cb5cd4e1380ea5d8b618e876da855207d616e32e4c0",
+      "archived_source": "<historical-private>/preimage/artifact/tests/oracle.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/tests/test_certificates.py.snapshot.txt",
+      "bytes": 11566,
+      "sha256": "6306a3bae680800c617c6ff9b6f811feac3b2b7acf1377d86f953249f0ad8987",
+      "archived_source": "<historical-private>/preimage/artifact/tests/test_certificates.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/tests/test_least.py.snapshot.txt",
+      "bytes": 2171,
+      "sha256": "4d81931d2767d635aaaa7ff5c340beca15ae2e051b00b71ca155cac98f373fcd",
+      "archived_source": "<historical-private>/preimage/artifact/tests/test_least.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/tests/test_observation_index.py.snapshot.txt",
+      "bytes": 11913,
+      "sha256": "b5f26d9e9a301a1f4c49d69ce86ade4b448b2c33e8df361135816a3093cc7957",
+      "archived_source": "<historical-private>/preimage/artifact/tests/test_observation_index.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/tests/test_reproduction.py.snapshot.txt",
+      "bytes": 2252,
+      "sha256": "75587bee9e4486de6c8ffaefe2284c5473883096f510333d894619ea5ea65792",
+      "archived_source": "<historical-private>/preimage/artifact/tests/test_reproduction.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/tests/test_targeted_repairs.py.snapshot.txt",
+      "bytes": 6692,
+      "sha256": "8ec3709cc66e7cf76e794e8f5b6cb93c0e7439cf953697a7247541e8bb0dacbf",
+      "archived_source": "<historical-private>/preimage/artifact/tests/test_targeted_repairs.py",
+      "copy_rule": "byte-identical mechanical copy; no newline normalization or time editing in the recovered file"
+    },
+    {
+      "path": "historical-source/audit.py.snapshot.txt",
+      "bytes": 6311,
+      "sha256": "3371d33fc200ac212a4b9addff69563eb9d05934bd022a3e573517bad306fe6e",
+      "archived_source": "<canonical-preimage>/artifact/audit.py",
+      "copy_rule": "Hash-equal complete frozen-after source body"
+    },
+    {
+      "path": "historical-source/experiments/campaign.py.snapshot.txt",
+      "bytes": 18877,
+      "sha256": "3d8274c65149607aec6d88af03946162a4a79d8200a0d44d3e28855f24bde4a3",
+      "archived_source": "<canonical-preimage>/artifact/experiments/campaign.py",
+      "copy_rule": "Hash-equal complete frozen-after source body"
+    },
+    {
+      "path": "historical-source/experiments/required_campaign.py.snapshot.txt",
+      "bytes": 7773,
+      "sha256": "c27116c80eba213d412200661b1c689ee26106dc634c36216707dc9b83b8b39e",
+      "archived_source": "<canonical-preimage>/artifact/experiments/required_campaign.py",
+      "copy_rule": "Hash-equal complete frozen-after source body"
+    },
+    {
+      "path": "historical-source/experiments/summarize_required.py.snapshot.txt",
+      "bytes": 4424,
+      "sha256": "022b2775c53e9229e6e9d8cc8f23eab61df7b866ce3df33b85d47bc69c34cd14",
+      "archived_source": "<canonical-preimage>/artifact/experiments/summarize_required.py",
+      "copy_rule": "Hash-equal complete frozen-after source body"
+    },
+    {
+      "path": "historical-source/native/OwnedRetry.cs.snapshot.txt",
+      "bytes": 5286,
+      "sha256": "cc2a2b456d13128a2b8d7d647ab918137cb8d69fc04547b552ab2312f3e93a0d",
+      "archived_source": "<canonical-preimage>/artifact/native/OwnedRetry.cs",
+      "copy_rule": "Hash-equal complete frozen-after source body"
+    },
+    {
+      "path": "historical-source/src/required_producer.py.snapshot.txt",
+      "bytes": 2553,
+      "sha256": "a14a1eed0f05764442eb19b081e58fd55cd04d928ad0539ad8aba8d812220cbf",
+      "archived_source": "<canonical-preimage>/artifact/src/required_producer.py",
+      "copy_rule": "Hash-equal complete frozen-after source body"
+    },
+    {
+      "path": "historical-source/src/required_replay.py.snapshot.txt",
+      "bytes": 5443,
+      "sha256": "626adb0b7e7c0b2ada5eb8534d6d5d5c2a6a67465c8f60efa813b13d04428d08",
+      "archived_source": "<canonical-preimage>/artifact/src/required_replay.py",
+      "copy_rule": "Hash-equal complete frozen-after source body"
+    },
+    {
+      "path": "historical-source/src/required_schema.py.snapshot.txt",
+      "bytes": 1623,
+      "sha256": "1c8277a5ddb07fd5c2eb668b4d40c7ad2d6581aa7228c6f58145011dde7d31ef",
+      "archived_source": "<canonical-preimage>/artifact/src/required_schema.py",
+      "copy_rule": "Hash-equal complete frozen-after source body"
+    },
+    {
+      "path": "historical-source/tests/test_required.py.snapshot.txt",
+      "bytes": 4147,
+      "sha256": "c8e1db3ee205f7fa2b1d8e77c9563d97261c6d30cd8883dff075809f9f9e0e30",
+      "archived_source": "<canonical-preimage>/artifact/tests/test_required.py",
+      "copy_rule": "Hash-equal complete frozen-after source body"
+    }
+  ],
+  "receipt_views": [
+    "records/current-tests.json",
+    "records/current-optimized-tests.json",
+    "records/current-examples.json",
+    "records/current-supports.json",
+    "records/current-grid-0.json",
+    "records/current-grid-1.json",
+    "records/current-grid-2.json",
+    "records/current-grid-3.json",
+    "records/current-cutoff.json",
+    "records/current-larger.json",
+    "records/current-graphs.json",
+    "records/current-scaling.json"
+  ],
+  "receipt_view_rule": "Only command/cwd paths are redacted; all genuine recorded measurement/status/timestamp/environment/stream-digest fields are preserved. Original receipt SHA256 and frozen-after binding are in each recovery block.",
+  "stdout_stderr_hashes_verified": true,
+  "copy_originals_unchanged": true
+}

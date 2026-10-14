@@ -1,0 +1,59 @@
+{
+  "observed_utc": "2026-10-14T20:34:39.933046+00:00",
+  "platform": "Windows-11-10.0.28000-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "source_before": {
+    "native/OwnedRetry.cs": "e47efbbecb031ce3d1bad4d781895437165907a1fb488ca8cbb1ebb35bc83148",
+    "results/required/cases.jsonl": "ee1f5cc30b26980ef3ebccd49cca7991588d03b349c417e6fda0da033716e177",
+    "results/required/world-checks.csv": "4c9ea39cdb15b654d3cd94ef2ab97a29a9df0daa632d6dcbbea0fcdc16674c2b"
+  },
+  "source_after": {
+    "native/OwnedRetry.cs": "e47efbbecb031ce3d1bad4d781895437165907a1fb488ca8cbb1ebb35bc83148",
+    "results/required/cases.jsonl": "ee1f5cc30b26980ef3ebccd49cca7991588d03b349c417e6fda0da033716e177",
+    "results/required/world-checks.csv": "4c9ea39cdb15b654d3cd94ef2ab97a29a9df0daa632d6dcbbea0fcdc16674c2b"
+  },
+  "compiler_sha256": "0d7d867a1fbb2920a42137eec9c82c4208793b8feb2d8aecf11d1fedb8070d1d",
+  "executable_sha256": "41ec06af331e4aa0fb883520b2e9ffdd37805398223441931aab8e5c13dd137c",
+  "compile_exit": 0,
+  "run_exit": 0,
+  "compiler": "Installed .NET Framework C# compiler; optimize+; System.Web.Extensions",
+  "compile_command": [
+    "$CSC",
+    "/nologo",
+    "/optimize+",
+    "/r:System.Web.Extensions.dll",
+    "/out:$OUTPUT/interpreter.exe",
+    "$PROJECT/native/OwnedRetry.cs"
+  ],
+  "command": [
+    "$OUTPUT/interpreter.exe",
+    "$PROJECT/results/required/cases.jsonl",
+    "$OUTPUT/decisions.jsonl",
+    "$OUTPUT/worlds.csv"
+  ],
+  "raw": {
+    "compile.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compile.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "decisions.jsonl": "098cb53859e355a2f2ffa4d2c9efa65b817f5450ebb80dbbad7c057451826deb",
+    "interpreter.exe": "41ec06af331e4aa0fb883520b2e9ffdd37805398223441931aab8e5c13dd137c",
+    "run.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run.stdout.log": "2717c6651c8a853b75388698bc7f990811666e7f36c3acaa7a4afdad57efa57f",
+    "worlds.csv": "e8f86646d824bbe206bcc85c6400cafa6fffce442627222ed553c73b6d979e46"
+  },
+  "summary": {
+    "cases": 16208,
+    "worlds": 294447,
+    "decisions": 350141,
+    "mismatches": 0,
+    "wall_seconds": 2.5479722,
+    "process_cpu_seconds": 2.515625,
+    "peak_working_set_bytes": 34996224,
+    "clr": "4.0.30319.42000",
+    "scope": "Owned complete finite interpreter in a compiled managed Windows process; JIT, not native AOT, third-party validation, retrieval or deployment"
+  },
+  "scope": "Fresh untimed full-world conformance, not a rerun or rebinding of historical latency results",
+  "publication": "Executable copied byte-exactly as interpreter.bin; original output streams and records unchanged",
+  "raw_aliases": {
+    "interpreter.exe": "interpreter.bin"
+  }
+}

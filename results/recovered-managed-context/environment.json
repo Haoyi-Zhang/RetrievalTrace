@@ -1,0 +1,36 @@
+{
+  "cpu": {
+    "Name": "12th Gen Intel(R) Core(TM) i7-12700KF",
+    "NumberOfCores": 12,
+    "NumberOfLogicalProcessors": 20
+  },
+  "os": {
+    "Caption": "Microsoft Windows 11 专业版",
+    "Version": "10.0.28000",
+    "OSArchitecture": "64 位"
+  },
+  "compiler": "4.8.9222.0 built by: NET481REL1LAST_25H2",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sqlite": "3.53.1",
+  "clocks": {
+    "perf_counter": {
+      "implementation": "QueryPerformanceCounter()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-07
+    },
+    "process_time": {
+      "implementation": "GetProcessTimes()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-07
+    },
+    "monotonic": {
+      "implementation": "GetTickCount64()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 0.015625
+    }
+  },
+  "measured_utc": "2026-10-14T04:11:37.417001+00:00"
+}

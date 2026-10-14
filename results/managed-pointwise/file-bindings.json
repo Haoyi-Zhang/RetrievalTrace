@@ -1,0 +1,9 @@
+{
+  "schema": "owned-retry-pointwise-files-v1",
+  "source_sha256": "e47efbbecb031ce3d1bad4d781895437165907a1fb488ca8cbb1ebb35bc83148",
+  "executable_sha256": "41ec06af331e4aa0fb883520b2e9ffdd37805398223441931aab8e5c13dd137c",
+  "cases_sha256": "ee1f5cc30b26980ef3ebccd49cca7991588d03b349c417e6fda0da033716e177",
+  "python_worlds_sha256": "4c9ea39cdb15b654d3cd94ef2ab97a29a9df0daa632d6dcbbea0fcdc16674c2b",
+  "managed_worlds_sha256": "e8f86646d824bbe206bcc85c6400cafa6fffce442627222ed553c73b6d979e46",
+  "managed_decisions_sha256": "098cb53859e355a2f2ffa4d2c9efa65b817f5450ebb80dbbad7c057451826deb"
+}

@@ -1,0 +1,206 @@
+{
+  "tasks": 12,
+  "comparisons": [
+    {
+      "file": "examples.json",
+      "comparison": "JSON excluding measurement",
+      "equal": true
+    },
+    {
+      "file": "examples/ambiguous-certificate.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/ambiguous-least.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/distance-certificate.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/distance-least.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/failure-certificate.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/failure-least.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/graph-certificate.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/huge-certificate.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/huge-least.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/ordered-certificate.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/ordered-least.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/sharp-certificate.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "examples/sharp-least.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "observation-erasure.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "supports.json",
+      "comparison": "JSON excluding measurement",
+      "equal": true
+    },
+    {
+      "file": "grid-0.json",
+      "comparison": "JSON excluding measurement",
+      "equal": true
+    },
+    {
+      "file": "grid-0.csv",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": true,
+      "equal": true
+    },
+    {
+      "file": "grid-1.json",
+      "comparison": "JSON excluding measurement",
+      "equal": true
+    },
+    {
+      "file": "grid-1.csv",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": true,
+      "equal": true
+    },
+    {
+      "file": "grid-2.json",
+      "comparison": "JSON excluding measurement",
+      "equal": true
+    },
+    {
+      "file": "grid-2.csv",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": true,
+      "equal": true
+    },
+    {
+      "file": "grid-3.json",
+      "comparison": "JSON excluding measurement",
+      "equal": true
+    },
+    {
+      "file": "grid-3.csv",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": true,
+      "equal": true
+    },
+    {
+      "file": "cutoff.json",
+      "comparison": "JSON excluding measurement",
+      "equal": true
+    },
+    {
+      "file": "uniform-cutoffs.csv",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": true,
+      "equal": true
+    },
+    {
+      "file": "larger.json",
+      "comparison": "JSON excluding measurement",
+      "equal": true
+    },
+    {
+      "file": "larger-cases.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "graphs.json",
+      "comparison": "JSON excluding measurement",
+      "equal": true
+    },
+    {
+      "file": "graph-pairs.csv",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": true,
+      "equal": true
+    },
+    {
+      "file": "graph-inputs.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "scaling.json",
+      "comparison": "JSON excluding measurement",
+      "equal": true
+    },
+    {
+      "file": "encoding-scaling.csv",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": true,
+      "equal": true
+    },
+    {
+      "file": "binary-horizons.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    },
+    {
+      "file": "worst-cost-branches.json",
+      "comparison": "bytes and universal-newline text",
+      "byte_equal": false,
+      "equal": true
+    }
+  ],
+  "scope": "Actual Windows processes, parent timeout only; no POSIX caps or child RSS. Historical files unmodified."
+}

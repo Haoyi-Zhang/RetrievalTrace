@@ -1,0 +1,54 @@
+{
+  "command": [
+    "<historical-private>/bin/OwnedRetry.exe",
+    "<historical-artifact>/results/required/cases.jsonl",
+    "<historical-private>/managed-world-decisions.jsonl"
+  ],
+  "cwd": "<historical-artifact>",
+  "started_utc": "2026-10-14T03:51:48.606076+00:00",
+  "wall_seconds": 2.3283992999931797,
+  "exit_code": 0,
+  "timeout_seconds": 1800,
+  "timed_out": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "os": "Windows-11-10.0.28000-SP0",
+  "sqlite": "3.53.1",
+  "clock": {
+    "perf_counter": {
+      "implementation": "QueryPerformanceCounter()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-7
+    },
+    "process_time": {
+      "implementation": "GetProcessTimes()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-7
+    },
+    "monotonic": {
+      "implementation": "GetTickCount64()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 0.015625
+    }
+  },
+  "process_tree_cpu": null,
+  "process_tree_peak_memory": null,
+  "resource_caps": "parent wall timeout only; no POSIX CPU/address-space caps",
+  "stdout_sha256": "4e47136549b0ff1e0a5480ad90ce013ee876fa47ad88d54834c18f188cb192a2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "recovery": {
+    "historical": true,
+    "record_kind": "historical_receipt_view_with_path_redactions",
+    "original_receipt_sha256": "a7284a345e675e8cccbbb5a3d369d10029153ca9b321e4291d879953dbfc61c9",
+    "frozen_after_receipt_sha256": "a7284a345e675e8cccbbb5a3d369d10029153ca9b321e4291d879953dbfc61c9",
+    "redacted_fields": [
+      "command",
+      "cwd"
+    ],
+    "measurement_and_stream_hash_fields_unchanged": true,
+    "frozen_after_utc": "2026-10-14T04:11:37.835621+00:00",
+    "no_preexecution_source_or_executable_hash_claim": true
+  }
+}

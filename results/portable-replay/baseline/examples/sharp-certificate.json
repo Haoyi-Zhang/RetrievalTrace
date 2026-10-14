@@ -1,0 +1,32 @@
+{
+  "cutoff": 2,
+  "horizon": 10,
+  "mode": "distance",
+  "status": "invalid",
+  "witness": {
+    "feedback": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "packet": [
+      "exhausted",
+      7
+    ],
+    "path": [
+      0,
+      1,
+      2
+    ],
+    "retrieval": [
+      0,
+      1,
+      2
+    ]
+  }
+}

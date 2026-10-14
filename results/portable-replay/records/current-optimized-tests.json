@@ -1,0 +1,65 @@
+{
+  "command": [
+    "<historical-python-3.12.14>",
+    "-B",
+    "-S",
+    "-O",
+    "-W",
+    "error::ResourceWarning",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "cwd": "<historical-artifact>",
+  "started_utc": "2026-10-14T03:47:15.794878+00:00",
+  "wall_seconds": 0.6898814000014681,
+  "exit_code": 0,
+  "timeout_seconds": 1800,
+  "timed_out": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "os": "Windows-11-10.0.28000-SP0",
+  "sqlite": "3.53.1",
+  "clock": {
+    "perf_counter": {
+      "implementation": "QueryPerformanceCounter()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-7
+    },
+    "process_time": {
+      "implementation": "GetProcessTimes()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-7
+    },
+    "monotonic": {
+      "implementation": "GetTickCount64()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 0.015625
+    }
+  },
+  "process_tree_cpu": null,
+  "process_tree_peak_memory": null,
+  "resource_caps": "parent wall timeout only; no POSIX CPU/address-space caps",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "f701e57ff8e203a7a1ea91af6cc788d73b226e0beba38e304d454ca489953180",
+  "recovery": {
+    "historical": true,
+    "record_kind": "historical_receipt_view_with_path_redactions",
+    "original_receipt_sha256": "9da4fd78407a6395aa2d81c281c745ae88e9f192333394e3f65588ce354f66e2",
+    "frozen_after_receipt_sha256": "9da4fd78407a6395aa2d81c281c745ae88e9f192333394e3f65588ce354f66e2",
+    "redacted_fields": [
+      "command",
+      "cwd"
+    ],
+    "measurement_and_stream_hash_fields_unchanged": true,
+    "frozen_after_utc": "2026-10-14T04:11:37.835621+00:00",
+    "no_preexecution_source_or_executable_hash_claim": true,
+    "historical_test_count": 119,
+    "historical_ok_lines": 119
+  }
+}

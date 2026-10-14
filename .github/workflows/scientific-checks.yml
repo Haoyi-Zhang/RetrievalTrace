@@ -37,6 +37,8 @@ jobs:
             set -euo pipefail
             python -B .github/scripts/check_repository.py
             python -B audit.py
+            python -B native/check_managed_worlds.py results/managed-pointwise/worlds.csv results/managed-pointwise/decisions.jsonl --source-binding-receipt results/managed-pointwise/file-bindings.json --managed-executable results/managed-pointwise/interpreter.bin
+            python -B -O native/check_managed_worlds.py results/managed-pointwise/worlds.csv results/managed-pointwise/decisions.jsonl --source-binding-receipt results/managed-pointwise/file-bindings.json --managed-executable results/managed-pointwise/interpreter.bin
             python -B reproduce.py --group all --out .scientific-output/campaign
           ' 2>&1 | tee .scientific-output/whole-run.log
       - name: Preserve raw output on success or failure

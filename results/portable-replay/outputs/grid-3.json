@@ -1,0 +1,13 @@
+{
+  "contracts": 20655,
+  "cost_packet_equivalence_checks": 206550,
+  "initial": 3,
+  "measurement": {
+    "cpu_seconds": 2.4375,
+    "peak_rss_kib": null,
+    "resource_profile": "portable task entry; no POSIX address-space/CPU cap or RSS measurement",
+    "wall_seconds": 2.4530000000086147
+  },
+  "mismatches": [],
+  "operational_executions": 103275
+}

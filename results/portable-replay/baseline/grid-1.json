@@ -1,0 +1,12 @@
+{
+  "contracts": 20655,
+  "cost_packet_equivalence_checks": 206550,
+  "initial": 1,
+  "measurement": {
+    "cpu_seconds": 3.845120916,
+    "peak_rss_kib": 100016,
+    "wall_seconds": 3.8502923689999875
+  },
+  "mismatches": [],
+  "operational_executions": 103275
+}

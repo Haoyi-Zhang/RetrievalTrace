@@ -1,0 +1,47 @@
+{
+  "cases": 816,
+  "families": {
+    "boolean": {
+      "cases": 384,
+      "invalid": 116,
+      "modes": {
+        "collapse": 384
+      },
+      "operational_executions": 10752,
+      "seed": 271828,
+      "valid": 268,
+      "world_comparisons": 5376
+    },
+    "cutoff": {
+      "cases": 240,
+      "invalid": 6,
+      "modes": {
+        "collapse": 60,
+        "distance": 36,
+        "rank": 144
+      },
+      "operational_executions": 29120,
+      "seed": 271830,
+      "valid": 234,
+      "world_comparisons": 14560
+    },
+    "relational": {
+      "cases": 192,
+      "invalid": 61,
+      "modes": {
+        "collapse": 192
+      },
+      "operational_executions": 95616,
+      "seed": 271829,
+      "valid": 131,
+      "world_comparisons": 47808
+    }
+  },
+  "measurement": {
+    "cpu_seconds": 1.275590872,
+    "peak_rss_kib": 101932,
+    "wall_seconds": 1.2761592699999937
+  },
+  "mismatches": [],
+  "world_comparisons": 67744
+}

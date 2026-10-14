@@ -1,0 +1,58 @@
+{
+  "adjacent_after_erasure": true,
+  "bits": 3,
+  "exact_adjacent": false,
+  "exact_larger": false,
+  "larger_after_erasure": false,
+  "mismatches": [],
+  "projected_packets": {
+    "1": [
+      {
+        "cost": [
+          1,
+          1
+        ],
+        "observation": [
+          "exhausted"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "cost": [
+          2,
+          2
+        ],
+        "observation": [
+          "exhausted"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "cost": [
+          3,
+          3
+        ],
+        "observation": [
+          "exhausted"
+        ]
+      },
+      {
+        "cost": [
+          3,
+          3
+        ],
+        "observation": [
+          "ok",
+          7
+        ]
+      }
+    ]
+  },
+  "source_horizons": [
+    2,
+    3
+  ],
+  "target_horizon": 1
+}

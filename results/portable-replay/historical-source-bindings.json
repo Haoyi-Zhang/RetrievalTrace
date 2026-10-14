@@ -1,0 +1,290 @@
+{
+  "project": "P049",
+  "historical": true,
+  "event_date": "2026-10-14",
+  "recovered_at_utc": "2026-10-14T20:34:59.175Z",
+  "record_scope": "Recovered existing historical Windows records; no execution, retiming or current scientific validation.",
+  "frozen_after": {
+    "sealed_utc": "2026-10-14T04:11:37.835621+00:00",
+    "manifest_sha256": "da6a45e5e3723179f3bada0b15c2833471c1acf529f3f75268e67a8a363a1a27",
+    "seal_sha256": "86bf977652a1b241107dd12a2d27120e2140b35dcda20aba228a7becbb7e88fd",
+    "environment_observed_utc": "2026-10-14T04:11:37.417001+00:00",
+    "candidate_inventory_sha256": "1e4c095edd60926833a2dee6ce241fb36c8e2e850ccc4989b8e83372c2efd3bb",
+    "commands_ledger_sha256": "5983b968671b514bc6f7482eabedd7c7c6eb47ffe164c43e8adbdc0672da61ea",
+    "role": "Post-execution integrity inventory, not a before-execution source/binary/input attestation."
+  },
+  "preexecution_hashes_present": false,
+  "no_before_execution_hashes_manufactured": true,
+  "original_private_records_modified": false,
+  "limits": "Complete matching frozen-after source bodies; pre-execution compiler/launch hashes were not captured.",
+  "bindings": [
+    {
+      "historical_path": "artifact/audit.py",
+      "bytes": 6311,
+      "sha256": "3371d33fc200ac212a4b9addff69563eb9d05934bd022a3e573517bad306fe6e",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/audit.py.snapshot.txt",
+      "body_origin": "Hash-equal canonical scientific preimage retained before this integration"
+    },
+    {
+      "historical_path": "artifact/check.py",
+      "bytes": 2333,
+      "sha256": "8eced4a9f29340a1ff0bfbf1eb8370be5a8eaf0a90e0d3054c1eb28038206556",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/check.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/experiments/__init__.py",
+      "bytes": 73,
+      "sha256": "add548a5b38abbd45e751d4cdaf3f1d67ba0bed9f993049d010caa7b3a209e79",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/experiments/__init__.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/experiments/campaign.py",
+      "bytes": 18877,
+      "sha256": "3d8274c65149607aec6d88af03946162a4a79d8200a0d44d3e28855f24bde4a3",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/experiments/campaign.py.snapshot.txt",
+      "body_origin": "Hash-equal canonical scientific preimage retained before this integration"
+    },
+    {
+      "historical_path": "artifact/experiments/required_campaign.py",
+      "bytes": 7773,
+      "sha256": "c27116c80eba213d412200661b1c689ee26106dc634c36216707dc9b83b8b39e",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/experiments/required_campaign.py.snapshot.txt",
+      "body_origin": "Hash-equal canonical scientific preimage retained before this integration"
+    },
+    {
+      "historical_path": "artifact/experiments/summarize_required.py",
+      "bytes": 4424,
+      "sha256": "022b2775c53e9229e6e9d8cc8f23eab61df7b866ce3df33b85d47bc69c34cd14",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/experiments/summarize_required.py.snapshot.txt",
+      "body_origin": "Hash-equal canonical scientific preimage retained before this integration"
+    },
+    {
+      "historical_path": "artifact/native/OwnedRetry.cs",
+      "bytes": 5286,
+      "sha256": "cc2a2b456d13128a2b8d7d647ab918137cb8d69fc04547b552ab2312f3e93a0d",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/native/OwnedRetry.cs.snapshot.txt",
+      "body_origin": "Hash-equal canonical scientific preimage retained before this integration"
+    },
+    {
+      "historical_path": "artifact/reproduce.py",
+      "bytes": 6557,
+      "sha256": "cafb10a4d8011a1d8690c8ce89926fb6e2a53c6f07b068b339ead6e82f63e020",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/reproduce.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/src/__init__.py",
+      "bytes": 82,
+      "sha256": "d9fa329b83c05727460879572b9f55173dd641ce0b6e8ee37f9a9def9b005622",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/__init__.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/src/adapter.py",
+      "bytes": 3898,
+      "sha256": "9ada0388a7e0ac4cd84649dfe7713713f49c2a5a4c57048945793f6c1812a4a2",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/adapter.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/src/cutoff_replay.py",
+      "bytes": 837,
+      "sha256": "d64e553433601c551a5277839cef8d17ac56c38d04f945b38ed8556d06897a8a",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/cutoff_replay.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/src/cutoff_search.py",
+      "bytes": 625,
+      "sha256": "d0e425e5290fcce37efbe254d519d8d36f70dc6e7dc3deda5136ac83423755fc",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/cutoff_search.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/src/graph_producer.py",
+      "bytes": 5130,
+      "sha256": "17f8e2a625464b9460b588af9f0796a7e04109de692bb3b37bf61ddf81c4a971",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/graph_producer.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/src/graph_replay.py",
+      "bytes": 5703,
+      "sha256": "9c719ee0d12a70118f3577b0b39093412afc110631ab15097e9ae10cb919ff36",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/graph_replay.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/src/required_producer.py",
+      "bytes": 2553,
+      "sha256": "a14a1eed0f05764442eb19b081e58fd55cd04d928ad0539ad8aba8d812220cbf",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/required_producer.py.snapshot.txt",
+      "body_origin": "Hash-equal canonical scientific preimage retained before this integration"
+    },
+    {
+      "historical_path": "artifact/src/required_replay.py",
+      "bytes": 5443,
+      "sha256": "626adb0b7e7c0b2ada5eb8534d6d5d5c2a6a67465c8f60efa813b13d04428d08",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/required_replay.py.snapshot.txt",
+      "body_origin": "Hash-equal canonical scientific preimage retained before this integration"
+    },
+    {
+      "historical_path": "artifact/src/required_schema.py",
+      "bytes": 1623,
+      "sha256": "1c8277a5ddb07fd5c2eb668b4d40c7ad2d6581aa7228c6f58145011dde7d31ef",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/required_schema.py.snapshot.txt",
+      "body_origin": "Hash-equal canonical scientific preimage retained before this integration"
+    },
+    {
+      "historical_path": "artifact/src/retry_producer.py",
+      "bytes": 4713,
+      "sha256": "436b8767eacc27c8726cc323438c598d4d16400e371da7ce065db8eeb46c5866",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/retry_producer.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/src/retry_replay.py",
+      "bytes": 9233,
+      "sha256": "6c327026e402a1bf542f356afe5278de8783815aaac0448c6ae5a7d947a071aa",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/retry_replay.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/src/schema.py",
+      "bytes": 8560,
+      "sha256": "6b09f7bd1e7eb75042ac350dafb088bc0f12d801381729b5b96f4c0b04a4b4a6",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/src/schema.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/tests/__init__.py",
+      "bytes": 66,
+      "sha256": "d6446b860e07534b09d429667bcecf3eeea2c6b59cf37748695d9a589139bbee",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/tests/__init__.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/tests/oracle.py",
+      "bytes": 3457,
+      "sha256": "bfd5980b20acbcbb37450cb5cd4e1380ea5d8b618e876da855207d616e32e4c0",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/tests/oracle.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/tests/test_certificates.py",
+      "bytes": 11566,
+      "sha256": "6306a3bae680800c617c6ff9b6f811feac3b2b7acf1377d86f953249f0ad8987",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/tests/test_certificates.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/tests/test_least.py",
+      "bytes": 2171,
+      "sha256": "4d81931d2767d635aaaa7ff5c340beca15ae2e051b00b71ca155cac98f373fcd",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/tests/test_least.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/tests/test_observation_index.py",
+      "bytes": 11913,
+      "sha256": "b5f26d9e9a301a1f4c49d69ce86ade4b448b2c33e8df361135816a3093cc7957",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/tests/test_observation_index.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/tests/test_reproduction.py",
+      "bytes": 2252,
+      "sha256": "75587bee9e4486de6c8ffaefe2284c5473883096f510333d894619ea5ea65792",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/tests/test_reproduction.py.snapshot.txt"
+    },
+    {
+      "historical_path": "artifact/tests/test_required.py",
+      "bytes": 4147,
+      "sha256": "c8e1db3ee205f7fa2b1d8e77c9563d97261c6d30cd8883dff075809f9f9e0e30",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/tests/test_required.py.snapshot.txt",
+      "body_origin": "Hash-equal canonical scientific preimage retained before this integration"
+    },
+    {
+      "historical_path": "artifact/tests/test_targeted_repairs.py",
+      "bytes": 6692,
+      "sha256": "8ec3709cc66e7cf76e794e8f5b6cb93c0e7439cf953697a7247541e8bb0dacbf",
+      "hash_capture": "frozen-after",
+      "hash_capture_utc": "2026-10-14T04:11:37.835621+00:00",
+      "matching_private_preimage_body_recovered": true,
+      "recovered_body": "historical-source/tests/test_targeted_repairs.py.snapshot.txt"
+    }
+  ],
+  "recovered_source_bodies": 28,
+  "total_source_bindings": 28,
+  "missing_matching_source_bodies": [],
+  "contemporaneous_binding_gaps": [
+    "The complete matching frozen-after source bodies are retained. Historical compiler and launch receipts did not capture pre-execution source, binary or input hashes."
+  ],
+  "body_sources": "Hash-equal preserved archive bodies and canonical preimages captured before integration; published as non-executable scientific context."
+}

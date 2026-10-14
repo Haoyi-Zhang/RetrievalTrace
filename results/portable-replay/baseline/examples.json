@@ -1,0 +1,68 @@
+{
+  "graph_status": "valid",
+  "least_cutoffs": [
+    [
+      "ordered",
+      1
+    ],
+    [
+      "distance",
+      2
+    ],
+    [
+      "sharp",
+      3
+    ],
+    [
+      "failure",
+      2
+    ],
+    [
+      "ambiguous",
+      1
+    ],
+    [
+      "huge",
+      2
+    ]
+  ],
+  "measurement": {
+    "cpu_seconds": 0.004003252000000013,
+    "peak_rss_kib": 94896,
+    "wall_seconds": 0.004077522000045519
+  },
+  "mismatches": [],
+  "observation_erasure_checks": 1,
+  "retry_cases": [
+    [
+      "ordered",
+      1,
+      "valid"
+    ],
+    [
+      "distance",
+      2,
+      "valid"
+    ],
+    [
+      "sharp",
+      2,
+      "invalid"
+    ],
+    [
+      "failure",
+      1,
+      "invalid"
+    ],
+    [
+      "ambiguous",
+      1,
+      "valid"
+    ],
+    [
+      "huge",
+      2,
+      "valid"
+    ]
+  ]
+}
