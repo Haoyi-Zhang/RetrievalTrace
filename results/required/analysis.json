@@ -1,0 +1,47 @@
+{
+  "contracts": 16208,
+  "decisions": 17232,
+  "world_checks": 350141,
+  "cost_rows": 930,
+  "cost_pairs": 93,
+  "groups": {
+    "collapse": {
+      "cases": 31,
+      "valid": 20,
+      "median_ratio": 0.37220843672456577,
+      "minimum_ratio": 0.054913880445795336,
+      "maximum_ratio": 1.7382198952879582,
+      "faster": 23,
+      "equal": 0,
+      "slower": 8
+    },
+    "distance": {
+      "cases": 15,
+      "valid": 14,
+      "median_ratio": 0.5226519337016574,
+      "minimum_ratio": 0.287109375,
+      "maximum_ratio": 1.163037080635668,
+      "faster": 14,
+      "equal": 0,
+      "slower": 1
+    },
+    "rank": {
+      "cases": 47,
+      "valid": 47,
+      "median_ratio": 1.126005361930295,
+      "minimum_ratio": 1.0844748858447488,
+      "maximum_ratio": 1.192200557103064,
+      "faster": 0,
+      "equal": 0,
+      "slower": 47
+    }
+  },
+  "managed": {
+    "cases": 16208,
+    "worlds": 294447,
+    "world_cutoff_checks": 350141,
+    "sha256": "098cb53859e355a2f2ffa4d2c9efa65b817f5450ebb80dbbad7c057451826deb",
+    "scope": "Owned complete finite interpreter in a compiled managed Windows process; JIT, not native AOT, third-party validation, retrieval or deployment"
+  },
+  "no_claim": "Timings are controlled generated finite Python computations, not deployment or retrieval gains."
+}

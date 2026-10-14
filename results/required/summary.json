@@ -1,0 +1,63 @@
+{
+  "protocol": "required-outcomes-v1",
+  "families": {
+    "one-bit-complete": {
+      "cases": 13104,
+      "worlds": 201600,
+      "valid": 11088,
+      "invalid": 2016
+    },
+    "two-bit-join-complete": {
+      "cases": 2592,
+      "worlds": 65000,
+      "valid": 2304,
+      "invalid": 288
+    },
+    "seeded-49049": {
+      "cases": 512,
+      "worlds": 27847,
+      "valid": 1353,
+      "invalid": 183
+    }
+  },
+  "contracts": 16208,
+  "decisions": 17232,
+  "world_decision_checks": 350141,
+  "operational_executions": 939035,
+  "newly_valid_under_stronger_contract": 872,
+  "cost_cases": 93,
+  "cost_rows": 930,
+  "wall_seconds": 13.455242399999406,
+  "cpu_seconds": 13.296875,
+  "files": {
+    "cases.jsonl": {
+      "bytes": 12313886,
+      "sha256": "ee1f5cc30b26980ef3ebccd49cca7991588d03b349c417e6fda0da033716e177"
+    },
+    "costs.csv": {
+      "bytes": 66498,
+      "sha256": "efed57047615d8bf22db85f1ba91d115980b93a11f6206cd48344fed38598e83"
+    },
+    "world-checks.csv": {
+      "bytes": 8936092,
+      "sha256": "4c9ea39cdb15b654d3cd94ef2ab97a29a9df0daa632d6dcbbea0fcdc16674c2b"
+    }
+  },
+  "mismatches": [],
+  "clocks": {
+    "perf_counter": {
+      "implementation": "QueryPerformanceCounter()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-07
+    },
+    "process_time": {
+      "implementation": "GetProcessTimes()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-07
+    }
+  },
+  "measurement_scope": "One Python process; per-arm admission/construction/JSON/replay and total CPU/wall. No process-tree RSS, deployment latency, network or retrieval workload.",
+  "comparator": "Same required contract and deterministic optional-support reduction; common identity/rank paths. Ordinary adjacent reachability recomputed after receipt; not a separately certified implementation."
+}

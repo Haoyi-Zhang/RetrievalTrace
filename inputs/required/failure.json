@@ -1,0 +1,14 @@
+{
+  "protocol": "required-outcomes-v1",
+  "required_outcomes": [2],
+  "capsule": {
+    "bits": 1, "initial": 0, "horizon": 7,
+    "outcomes": [
+      {"id":"a","add":1,"failure":null},
+      {"id":"f0","add":0,"failure":"f"},
+      {"id":"f1","add":1,"failure":"f"}
+    ],
+    "feedback": [1,1],
+    "query_cost": [2,0,1], "feedback_cost": [0,3,1]
+  }
+}

@@ -44,7 +44,7 @@ python check.py least inputs/examples/distance.json --certificate scratch/least.
 python audit.py
 ```
 
-The current 111-test suite passes locally in both interpreter modes, including
+The current 119-test suite passes locally in both interpreter modes, including
 five observation-index regression groups with literal finite references. These
 groups run in the existing discovery commands and scientific workflow. The
 retained reference logs record the earlier 100-test suite; six additional runner
@@ -189,11 +189,39 @@ proofs are written, not mechanized. `claim_evidence_ledger.csv` maps claims to
 proofs, implementations, tests and raw results. `literature/` records the source
 selection, read editions and precise comparison boundaries.
 
-Producer, consumer and oracle are separate algorithms from the same substantive
-AI-assisted workflow, not independent authors or blind reviewers. Admission,
+Producer, consumer and oracle are separate algorithms from the same
+development process, not independently developed implementations. Admission,
 Python's runtime, ordinary integer semantics and the correspondence between
 written mathematics and code remain trusted. Successful replay does not prove
 the absence of all common-mode errors.
+
+## Required outcome availability
+
+`required-contract.md` specifies the explicit `required-outcomes-v1` wrapper,
+the exact enabled-representative law and the optional-support cutoff bound.
+The legacy input and certificate protocols are unchanged. Required means
+available, never compulsory selection or fairness. Failure representatives must
+preserve both label and evidence. The new consumer imports no producer and
+reuses the existing typed local distance-row checks.
+
+```sh
+python -B experiments/required_campaign.py --out scratch/required
+python -B experiments/summarize_required.py scratch/required
+```
+
+The complete scientific selection contains 16,208 owned generated contracts,
+17,232 contract decisions, and 350,141 world--cutoff checks, with no mismatch.
+Raw inputs/certificates, all world checks, all 930 timing rows, paired medians
+and their bindings are in `results/required`. All original input and historical
+result files are retained unchanged. Ordinary adjacent recomputation uses the
+same information and mathematical guarantee; all faster/slower outcomes remain.
+The compiled owned C# interpreter is a full operational cross-check, not a
+third-party retriever, native AOT validation or deployment benchmark. Its build
+and runtime scope are documented separately from Python timings.
+
+The task-level campaign entry also runs on Windows: missing POSIX `resource`
+reports RSS as null and names the portable profile. `reproduce.py` continues
+to require real POSIX caps; no mock limits are reported as measurements.
 
 ## Attribution and status
 

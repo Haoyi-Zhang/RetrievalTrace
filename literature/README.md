@@ -1,5 +1,9 @@
 # Source calibration and bibliography audit
 
+The calibration matrix retains historical reading records; it is not a fresh
+blanket full-text certification. Current availability-related reading scopes
+are explicit in the added source records, and no external implementation was run.
+
 The matrix contains 17 distinct full papers: 12 TOPLAS articles and five
 adjacent-venue articles. Five relevant influential articles overlap the matrix
 (three TOPLAS and two adjacent), as explained in influential-selection.csv.
@@ -9,7 +13,12 @@ The retained 12-paper records precede this continuation; the five adjacent
 full-text records were completed here. An abstract is not counted as a full read.
 
 The TOPLAS reference counts are 19, 40, 39, 34, 41, 57, 44, 13, 107, 62, 35 and
-79; their median is 40.5. The current manuscript has 44 cited scholarly entries.
+79; their median is 40.5. The historical audit contained 44 cited scholarly entries;
+the current manuscript contains 53. Seven pre-existing manuscript references
+absent from that audit are now identified, without claiming fresh full-text
+verification. Two modal-specification sources support the availability extension;
+their precise author-copy reading ranges are recorded rather than counted as
+complete full-text reads or added to the historical calibration sample.
 This is a deliberately relevant finite sample, not a random census of TOPLAS
 and not an official reference-count rule. Publication dates, read editions and
 reference counts are separate fields. An author's extended manuscript may be
@@ -47,7 +56,7 @@ No empirical result or authorship agreement is inherited from that paper.
 
 `bibliography-audit.csv` identifies every scholarly entry and the specific
 supporting topic/contrast. It distinguishes full calibration reads from narrow
-background/source checks; it does not claim that all 44 papers were fully
+background/source checks; it does not claim that all 53 papers were fully
 reimplemented or that every bibliography entry is an independent baseline.
 Source PDFs are not redistributed; primary scholarly identifiers and lawful
 access locations are retained. No external source's implementation was modified.

@@ -68,13 +68,13 @@ def main():
     with (ROOT/'literature/influential-selection.csv').open(newline='') as f:influential=list(csv.DictReader(f))
     require(len(influential)==5 and {x['key'] for x in influential}<={x['key'] for x in cal},'influential full-text membership')
     with (ROOT/'literature/bibliography-audit.csv').open(newline='') as f:bib=list(csv.DictReader(f))
-    require(len(bib)==44 and len({x['key'] for x in bib})==44,'bibliography identification')
+    require(len(bib)==53 and len({x['key'] for x in bib})==53,'current bibliography record census')
     with (ROOT/'claim_evidence_ledger.csv').open(newline='') as f:ledger=list(csv.DictReader(f))
     for x in ledger:
         for field in ('proof_or_checker','source_or_test','raw_result'):
             for name in x[field].split(';'):
                 if name and name!='not-applicable':require((ROOT/name).is_file(),'missing ledger evidence '+name)
-    print(json.dumps({'status':'consistent','tests_each_mode':100,**totals,'graph_pairs':40804,'larger_worlds':67744,'scholarly_references':44,'toplas_sample':12,'adjacent_sample':5,'influential_sample':5},sort_keys=True))
+    print(json.dumps({'status':'consistent','historical_tests_each_mode':100,**totals,'graph_pairs':40804,'larger_worlds':67744,'bibliography_records':len(bib),'toplas_sample':12,'adjacent_sample':5,'influential_sample':5,'scope':'retained historical science and current source records; not a full-text or venue certificate'},sort_keys=True))
     return 0
 if __name__=='__main__':
     try:sys.exit(main())

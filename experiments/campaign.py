@@ -4,7 +4,11 @@ All counts describe explicit finite families, not real workload diversity.
 The generator is part of the scientific input and is fixed before evaluation.
 """
 from __future__ import annotations
-import argparse,csv,itertools,json,pathlib,random,sys,time,resource,copy
+import argparse,csv,itertools,json,pathlib,random,sys,time,copy
+try:
+    import resource
+except ImportError:
+    resource=None
 from math import comb
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]))
 from src.schema import retry,graph,load
@@ -303,7 +307,10 @@ def main():
     a.out.mkdir(parents=True,exist_ok=True);start=time.monotonic();cpu=time.process_time()
     result=grid(a.initial,a.out) if a.task=='grid' else globals()[a.task](a.out)
     name=f'grid-{a.initial}' if a.task=='grid' else a.task
-    result['measurement']=dict(wall_seconds=time.monotonic()-start,cpu_seconds=time.process_time()-cpu,peak_rss_kib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
+    result['measurement']=dict(wall_seconds=time.monotonic()-start,cpu_seconds=time.process_time()-cpu,
+        peak_rss_kib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss if resource is not None else None)
+    if resource is None:
+        result['measurement']['resource_profile']='portable task entry; no POSIX address-space/CPU cap or RSS measurement'
     write_json(a.out/(name+'.json'),result)
     print(json.dumps(dict(task=name,**{k:v for k,v in result.items() if k not in ['families','retry_cases']}),sort_keys=True))
     return 1 if result.get('mismatches') else 0
