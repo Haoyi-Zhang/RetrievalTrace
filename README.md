@@ -162,12 +162,12 @@ non-integer or Boolean target horizon is malformed rather than resource-limited.
 
 ## Source map and trusted boundary
 
-`src/schema.py` admits inputs. `graph_producer.py` constructs structural censuses
-and cover forests; `graph_replay.py` independently reconstructs paths and checks
-coverage. `retry_producer.py` constructs collapse/rank/distance witnesses;
-`retry_replay.py` checks local parents, inequalities and counterexamples without
-importing search. `cutoff_search.py` locates the least valid cutoff;
-`cutoff_replay.py` checks its two ordinary proof components. `adapter.py` unfolds
+`src/schema.py` admits inputs. `src/graph_producer.py` constructs structural censuses
+and cover forests; `src/graph_replay.py` independently reconstructs paths and checks
+coverage. `src/retry_producer.py` constructs collapse/rank/distance witnesses;
+`src/retry_replay.py` checks local parents, inequalities and counterexamples without
+importing search. `src/cutoff_search.py` locates the least valid cutoff;
+`src/cutoff_replay.py` checks its two ordinary proof components. `src/adapter.py` unfolds
 only small capsules. `tests/oracle.py` implements direct operational semantics
 and imports neither producer nor consumer. `experiments/campaign.py` selects,
 executes and records finite comparisons.
@@ -183,8 +183,10 @@ nonempty-product-world references, admission/corruption/cap checks, and mutation
 between calls. No route/world/cardinality is reduced, and no speedup or new
 full-campaign result is claimed. A single-packet census still adds index storage.
 
-The proof notes are `finite-programs.md`, `retry-theorems.md`,
-`cutoff-certificates.md`, `least-cutoff.md`, and `boundaries.md`. Their general
+The proof notes are [finite programs](proofs/finite-programs.md),
+[retry theorems](proofs/retry-theorems.md),
+[cutoff certificates](proofs/cutoff-certificates.md),
+[least cutoff](proofs/least-cutoff.md), and [boundaries](proofs/boundaries.md). Their general
 proofs are written, not mechanized. `claim_evidence_ledger.csv` maps claims to
 proofs, implementations, tests and raw results. `literature/` records the source
 selection, read editions and precise comparison boundaries.
@@ -243,4 +245,5 @@ AI contributed substantively to question design, proofs, code, test and
 experiment design, execution orchestration, analysis, literature comparison and
 writing. This is internal research, not an external submission. Human adoption,
 intellectual contribution, accountability and applicable disclosure policies
-remain external-use conditions. No public repository URL has been invented.
+remain external-use conditions. External supplement upload permissions have not
+been represented as obtained.
