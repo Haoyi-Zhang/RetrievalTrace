@@ -240,10 +240,3 @@ Original artifact code, generated evidence and documentation use `LICENSE`
 (MIT). Cited publications are not redistributed or relicensed. There are no
 integrated external solver/model/benchmark internals. `external_resources.csv`
 identifies scholarly and official sources and the integration mode.
-
-AI contributed substantively to question design, proofs, code, test and
-experiment design, execution orchestration, analysis, literature comparison and
-writing. This is internal research, not an external submission. Human adoption,
-intellectual contribution, accountability and applicable disclosure policies
-remain external-use conditions. External supplement upload permissions have not
-been represented as obtained.
