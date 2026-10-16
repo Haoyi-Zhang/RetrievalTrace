@@ -127,6 +127,20 @@ three-atom exhaustion-projection boundary. This is a representation and finite
 semantic comparison, not a lower bound for all proof systems. The specialized witness can still require
 exponentially many worlds or evidence states.
 
+## Manuscript figures
+
+The optional Matplotlib renderer produces three self-contained vector PDFs
+with embedded fonts:
+
+```sh
+python -B figures/generate.py --outdir scratch/figures
+```
+
+The schematic illustrates the written support-cover example. The size plot
+reads all twelve rows of `results/current/encoding-scaling.csv`; the timing
+plot reads all 93 medians of `results/required/paired-costs.csv`, including
+ratios above one. The manuscript build invokes this same renderer.
+
 ## Input conventions
 
 Retry masks have `bits` in 0..12, `initial`, positive `horizon`, and 1..64 outcomes
